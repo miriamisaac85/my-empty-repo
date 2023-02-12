@@ -1,7 +1,7 @@
 envs {
   envs = [
     {
-      name = "CPQ1"
+      name = "Salesforce"
       accountToServiceName = {
         salesforce = "salesforce"
       }
