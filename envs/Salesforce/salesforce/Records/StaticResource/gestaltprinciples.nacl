@@ -1,0 +1,7 @@
+salesforce.StaticResource gestaltprinciples {
+  cacheControl = "Private"
+  contentType = "application/pdf"
+  description = "my description"
+  fullName = "gestaltprinciples"
+  content = file("salesforce/Records/StaticResource/gestaltprinciples.pdf")
+}
