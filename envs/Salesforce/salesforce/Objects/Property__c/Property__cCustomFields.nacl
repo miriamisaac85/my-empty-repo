@@ -1,0 +1,402 @@
+type salesforce.Property__c {
+  salesforce.Text Address__c {
+    apiName = "Property__c.Address__c"
+    deprecated = false
+    externalId = false
+    label = "Address"
+    length = 100
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Currency Assessed_Value__c {
+    apiName = "Property__c.Assessed_Value__c"
+    deprecated = false
+    externalId = false
+    label = "Assessed Value"
+    precision = 18
+    scale = 0
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Baths__c {
+    apiName = "Property__c.Baths__c"
+    deprecated = false
+    externalId = false
+    label = "Baths"
+    precision = 2
+    scale = 0
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Beds__c {
+    apiName = "Property__c.Beds__c"
+    deprecated = false
+    externalId = false
+    label = "Beds"
+    precision = 2
+    scale = 0
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup Broker__c {
+    apiName = "Property__c.Broker__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Broker"
+    referenceTo = [
+      salesforce.Broker__c,
+    ]
+    relationshipLabel = "Properties"
+    relationshipName = "Properties"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text City__c {
+    apiName = "Property__c.City__c"
+    deprecated = false
+    externalId = false
+    label = "City"
+    length = 50
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Date Date_Agreement__c {
+    apiName = "Property__c.Date_Agreement__c"
+    deprecated = false
+    externalId = false
+    label = "Date Agreement"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Date_Closed__c {
+    apiName = "Property__c.Date_Closed__c"
+    deprecated = false
+    externalId = false
+    label = "Date Closed"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Date_Contracted__c {
+    apiName = "Property__c.Date_Contracted__c"
+    deprecated = false
+    externalId = false
+    label = "Date Contracted"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Date_Listed__c {
+    apiName = "Property__c.Date_Listed__c"
+    defaultValueFormula = "TODAY() - 10"
+    deprecated = false
+    externalId = false
+    label = "Date Listed"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date Date_Pre_Market__c {
+    apiName = "Property__c.Date_Pre_Market__c"
+    deprecated = false
+    externalId = false
+    label = "Date Pre Market"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaNumber Days_On_Market__c {
+    apiName = "Property__c.Days_On_Market__c"
+    deprecated = false
+    externalId = false
+    formula = "TODAY() - Date_Listed__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Days On Market"
+    precision = 18
+    scale = 0
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Property__c.field.Date_Listed__c
+      },
+    ]
+  }
+  salesforce.LongTextArea Description__c {
+    apiName = "Property__c.Description__c"
+    deprecated = false
+    externalId = false
+    label = "Description"
+    length = 500
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Geolocation Location__c {
+    apiName = "Property__c.Location__c"
+    deprecated = false
+    displayLocationInDecimal = true
+    externalId = false
+    label = "Location"
+    scale = 7
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText Picture_IMG__c {
+    apiName = "Property__c.Picture_IMG__c"
+    deprecated = false
+    externalId = false
+    formula = "if(ISBLANK(Picture__c), '', IMAGE(Picture__c, \"Picture\"))"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Main Picture"
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Property__c.field.Picture__c
+      },
+    ]
+  }
+  salesforce.Url Picture__c {
+    apiName = "Property__c.Picture__c"
+    deprecated = false
+    externalId = false
+    label = "Picture"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Price_Sold__c {
+    apiName = "Property__c.Price_Sold__c"
+    deprecated = false
+    externalId = false
+    label = "Price Sold"
+    precision = 8
+    scale = 0
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Price__c {
+    apiName = "Property__c.Price__c"
+    deprecated = false
+    externalId = false
+    label = "Asking Price"
+    precision = 8
+    scale = 0
+    trackFeedHistory = true
+    trackHistory = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText Record_Link__c {
+    apiName = "Property__c.Record_Link__c"
+    deprecated = false
+    externalId = false
+    formula = "LEFT($Api.Partner_Server_URL_260, FIND( '/services', $Api.Partner_Server_URL_260))+ Id"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Record Link"
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text State__c {
+    apiName = "Property__c.State__c"
+    deprecated = false
+    externalId = false
+    label = "State"
+    length = 20
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Status__c {
+    apiName = "Property__c.Status__c"
+    deprecated = false
+    externalId = false
+    label = "Status"
+    trackFeedHistory = true
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Contracted"
+        default = false
+        label = "Contracted"
+      },
+      {
+        fullName = "Pre Market"
+        default = false
+        label = "Pre Market"
+      },
+      {
+        fullName = "Available"
+        default = false
+        label = "Available"
+      },
+      {
+        fullName = "Under Agreement"
+        default = false
+        label = "Under Agreement"
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Tags__c {
+    apiName = "Property__c.Tags__c"
+    deprecated = false
+    externalId = false
+    label = "Tags"
+    length = 255
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaText Thumbnail_IMG__c {
+    apiName = "Property__c.Thumbnail_IMG__c"
+    deprecated = false
+    externalId = false
+    formula = "if(ISBLANK(Thumbnail__c), \"\", IMAGE(Thumbnail__c, \"Picture\", 200, 200))"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Main Thumbnail"
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Property__c.field.Thumbnail__c
+      },
+    ]
+  }
+  salesforce.Url Thumbnail__c {
+    apiName = "Property__c.Thumbnail__c"
+    deprecated = false
+    externalId = false
+    label = "Thumbnail"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Zip__c {
+    apiName = "Property__c.Zip__c"
+    deprecated = false
+    externalId = false
+    label = "Zip"
+    length = 10
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

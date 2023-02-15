@@ -1,0 +1,8 @@
+salesforce.CustomTab Property__c {
+  fullName = "Property__c"
+  customObject = true
+  motif = "Custom85: Real Estate Sign"
+  _parent = [
+    salesforce.Property__c,
+  ]
+}

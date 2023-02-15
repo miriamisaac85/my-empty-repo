@@ -1,0 +1,47 @@
+salesforce.LightningComponentBundle propertyTileList {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Property Tile List"
+  targets = {
+    target = [
+      "lightning__AppPage",
+    ]
+  }
+  fullName = "propertyTileList"
+  lwcResources = {
+    lwcResource = {
+      propertyTileList_css@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyTileList/propertyTileList.css")
+        filePath = "lwc/propertyTileList/propertyTileList.css"
+      }
+      propertyTileList_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyTileList/propertyTileList.js")
+        filePath = "lwc/propertyTileList/propertyTileList.js"
+      }
+      propertyTileList_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyTileList/propertyTileList.html")
+        filePath = "lwc/propertyTileList/propertyTileList.html"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PropertyController
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.paginator
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertyTile
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.FiltersChange
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.PropertySelected
+    },
+  ]
+}

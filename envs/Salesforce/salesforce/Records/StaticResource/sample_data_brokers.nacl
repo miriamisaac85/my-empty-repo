@@ -1,0 +1,6 @@
+salesforce.StaticResource sample_data_brokers {
+  cacheControl = "Private"
+  contentType = "application/json"
+  fullName = "sample_data_brokers"
+  content = file("salesforce/Records/StaticResource/sample_data_brokers.json")
+}

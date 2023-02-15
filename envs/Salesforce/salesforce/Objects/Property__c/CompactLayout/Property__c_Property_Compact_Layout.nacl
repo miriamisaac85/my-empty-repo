@@ -1,0 +1,14 @@
+salesforce.CompactLayout Property__c_Property_Compact_Layout {
+  fullName = "Property__c.Property_Compact_Layout"
+  fields = [
+    "Name",
+    "City__c",
+    "Price__c",
+    "Beds__c",
+    "Baths__c",
+  ]
+  label = "Property Compact Layout"
+  _parent = [
+    salesforce.Property__c,
+  ]
+}

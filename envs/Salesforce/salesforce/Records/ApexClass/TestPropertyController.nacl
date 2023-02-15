@@ -1,0 +1,29 @@
+salesforce.ApexClass TestPropertyController {
+  apiVersion = 52
+  status = "Active"
+  fullName = "TestPropertyController"
+  content = file("salesforce/Records/ApexClass/TestPropertyController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PagedResult
+    },
+    {
+      reference = salesforce.ApexClass.instance.PropertyController
+    },
+    {
+      reference = salesforce.ContentVersion
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Baths__c
+    },
+    {
+      reference = salesforce.Property__c.field.Beds__c
+    },
+    {
+      reference = salesforce.Property__c.field.Price__c
+    },
+  ]
+}

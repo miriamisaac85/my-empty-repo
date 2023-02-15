@@ -1,0 +1,55 @@
+salesforce.LightningComponentBundle propertyCarousel {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Property Carousel"
+  targets = {
+    target = [
+      "lightning__RecordPage",
+    ]
+  }
+  targetConfigs = {
+    targetConfig = [
+      {
+        targets = "lightning__RecordPage"
+        objects = [
+          {
+            object = "Property__c"
+          },
+        ]
+      },
+    ]
+  }
+  fullName = "propertyCarousel"
+  lwcResources = {
+    lwcResource = {
+      propertyCarousel_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyCarousel/propertyCarousel.html")
+        filePath = "lwc/propertyCarousel/propertyCarousel.html"
+      }
+      propertyCarousel_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyCarousel/propertyCarousel.js")
+        filePath = "lwc/propertyCarousel/propertyCarousel.js"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PropertyController
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Address__c
+    },
+    {
+      reference = salesforce.Property__c.field.City__c
+    },
+    {
+      reference = salesforce.Property__c.field.Description__c
+    },
+  ]
+}

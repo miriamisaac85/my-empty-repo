@@ -1,0 +1,12 @@
+salesforce.CustomTab Property_Explorer {
+  fullName = "Property_Explorer"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Property_Explorer"
+  label = "Property Explorer"
+  motif = "Custom39: Telescope"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Property_Explorer
+    },
+  ]
+}

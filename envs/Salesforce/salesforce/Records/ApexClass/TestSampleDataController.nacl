@@ -1,0 +1,20 @@
+salesforce.ApexClass TestSampleDataController {
+  apiVersion = 52
+  status = "Active"
+  fullName = "TestSampleDataController"
+  content = file("salesforce/Records/ApexClass/TestSampleDataController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SampleDataController
+    },
+    {
+      reference = salesforce.Broker__c
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Property__c
+    },
+  ]
+}

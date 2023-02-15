@@ -1,0 +1,88 @@
+salesforce.Prompt Property {
+  fullName = "Property"
+  masterLabel = "Property"
+  promptVersions = [
+    {
+      body = "On the Property record page, we have a component that displays the number of days a property has been on the market. This is a pretty important detail for sales reps!"
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      delayDays = 1
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomLeft"
+      displayType = "FloatingPanel"
+      isPublished = true
+      masterLabel = "Property Step 1"
+      publishedDate = "2022-10-18"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      startDate = "2020-06-29"
+      stepNumber = 1
+      targetPageKey1 = "Property__c"
+      targetPageKey2 = "view"
+      targetPageType = "standard__recordPage"
+      timesToDisplay = 1
+      title = "Days on the Market"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "On the right, we reuse the map component that we have in Property Explorer. Reusability is a great benefit of a component-based development model."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomRight"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Step 2"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 2
+      targetPageKey1 = "Property__c"
+      targetPageKey2 = "view"
+      targetPageType = "standard__recordPage"
+      title = "Component Reuse"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "Dreamhouse sample app is designed to work nicely on mobile. Consider logging into the Salesforce Mobile app and checking it out!"
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomCenter"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Step 3"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 3
+      targetPageKey1 = "Property__c"
+      targetPageKey2 = "view"
+      targetPageType = "standard__recordPage"
+      title = "Mobile"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      actionButtonLabel = "Code Tours"
+      actionButtonLink = "https://github.com/trailheadapps/dreamhouse-lwc#code-tours"
+      body = "You've now completed the Dreamhouse sample app tour. <b>We hope that you've enjoyed the trip! </b> Take a look at VS Code's code tours to learn more about the app's code."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "TopCenter"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Step 4"
+      shouldDisplayActionButton = true
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 4
+      targetPageKey1 = "Property__c"
+      targetPageKey2 = "view"
+      targetPageType = "standard__recordPage"
+      title = "Wrapping It Up"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+  ]
+}

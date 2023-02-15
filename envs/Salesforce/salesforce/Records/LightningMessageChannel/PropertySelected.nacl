@@ -1,0 +1,11 @@
+salesforce.LightningMessageChannel PropertySelected {
+  fullName = "PropertySelected"
+  isExposed = true
+  lightningMessageFields = [
+    {
+      description = "Property Id"
+      fieldName = "propertyId"
+    },
+  ]
+  masterLabel = "Property Selected Message Channel"
+}

@@ -1,0 +1,14 @@
+salesforce.CompactLayout Broker__c_Broker_Compact {
+  fullName = "Broker__c.Broker_Compact"
+  fields = [
+    "Name",
+    "Title__c",
+    "Phone__c",
+    "Mobile_Phone__c",
+    "Email__c",
+  ]
+  label = "Broker Compact"
+  _parent = [
+    salesforce.Broker__c,
+  ]
+}

@@ -1,0 +1,236 @@
+salesforce.Layout Property__c_Property_Layout@uubs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Property__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Address__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.City__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.State__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Zip__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Property__c.field.Days_On_Market__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Tags__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Status__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Beds__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Baths__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Price__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Location__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Broker__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Description__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Dates"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Date_Contracted__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Date_Pre_Market__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Date_Listed__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Date_Agreement__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Date_Closed__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Pictures"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Picture__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Property__c.field.Picture_IMG__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Property__c.field.Thumbnail__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Property__c.field.Thumbnail_IMG__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Property__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Property__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h3D000000e68E"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Property__c-Property Layout"
+  _parent = [
+    salesforce.Property__c,
+  ]
+}

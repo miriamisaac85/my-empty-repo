@@ -1,0 +1,11 @@
+salesforce.ListView Broker__c_All {
+  fullName = "Broker__c.All"
+  columns = [
+    "NAME",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Broker__c,
+  ]
+}

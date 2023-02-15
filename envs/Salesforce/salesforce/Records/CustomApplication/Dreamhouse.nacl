@@ -1,0 +1,67 @@
+salesforce.CustomApplication Dreamhouse {
+  fullName = "Dreamhouse"
+  actionOverrides = [
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Broker_Record_Page"
+      formFactor = "Small"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Broker__c"
+    },
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Broker_Record_Page"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Broker__c"
+    },
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Property_Record_Page"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Property__c"
+    },
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Property_Record_Page"
+      formFactor = "Small"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Property__c"
+    },
+  ]
+  brand = {
+    headerColor = "#86BD4A"
+    logo = "dreamhouselogosquare"
+    shouldOverrideOrgTheme = false
+  }
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  label = "Dreamhouse"
+  navType = "Standard"
+  setupExperience = "all"
+  tabs = [
+    "standard-home",
+    salesforce.CustomTab.instance.Property_Explorer,
+    salesforce.CustomTab.instance.Property_Finder,
+    "standard-Contact",
+    salesforce.CustomTab.instance.Property__c,
+    salesforce.CustomTab.instance.Broker__c,
+    "standard-File",
+    salesforce.CustomTab.instance.Settings,
+  ]
+  uiType = "Lightning"
+}

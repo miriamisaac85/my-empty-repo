@@ -1,0 +1,6 @@
+salesforce.ApexClass PagedResult {
+  apiVersion = 52
+  status = "Active"
+  fullName = "PagedResult"
+  content = file("salesforce/Records/ApexClass/PagedResult.cls")
+}

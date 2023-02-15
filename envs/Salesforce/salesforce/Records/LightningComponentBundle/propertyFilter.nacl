@@ -1,0 +1,28 @@
+salesforce.LightningComponentBundle propertyFilter {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Property Filter"
+  targets = {
+    target = [
+      "lightning__AppPage",
+    ]
+  }
+  fullName = "propertyFilter"
+  lwcResources = {
+    lwcResource = {
+      propertyFilter_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyFilter/propertyFilter.html")
+        filePath = "lwc/propertyFilter/propertyFilter.html"
+      }
+      propertyFilter_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyFilter/propertyFilter.js")
+        filePath = "lwc/propertyFilter/propertyFilter.js"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningMessageChannel.instance.FiltersChange
+    },
+  ]
+}

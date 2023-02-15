@@ -1,0 +1,63 @@
+salesforce.LightningComponentBundle propertySummary {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Property Summary"
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__RecordPage",
+      "lightning__HomePage",
+    ]
+  }
+  targetConfigs = {
+    targetConfig = [
+      {
+        targets = "lightning__RecordPage"
+        objects = [
+          {
+            object = "Property__c"
+          },
+        ]
+      },
+    ]
+  }
+  fullName = "propertySummary"
+  lwcResources = {
+    lwcResource = {
+      propertySummary_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertySummary/propertySummary.html")
+        filePath = "lwc/propertySummary/propertySummary.html"
+      }
+      propertySummary_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertySummary/propertySummary.js")
+        filePath = "lwc/propertySummary/propertySummary.js"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.PropertySelected
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Baths__c
+    },
+    {
+      reference = salesforce.Property__c.field.Beds__c
+    },
+    {
+      reference = salesforce.Property__c.field.Broker__c
+    },
+    {
+      reference = salesforce.Property__c.field.Picture__c
+    },
+    {
+      reference = salesforce.Property__c.field.Price__c
+    },
+  ]
+}

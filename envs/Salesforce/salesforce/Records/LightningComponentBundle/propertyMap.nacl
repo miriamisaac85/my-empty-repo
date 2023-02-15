@@ -1,0 +1,58 @@
+salesforce.LightningComponentBundle propertyMap {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Property Map"
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__RecordPage",
+      "lightning__HomePage",
+    ]
+  }
+  targetConfigs = {
+    targetConfig = [
+      {
+        targets = "lightning__RecordPage"
+        objects = [
+          {
+            object = "Property__c"
+          },
+        ]
+        supportedFormFactors = {
+          supportedFormFactor = [
+            {
+              type = "Large"
+            },
+            {
+              type = "Small"
+            },
+          ]
+        }
+      },
+    ]
+  }
+  fullName = "propertyMap"
+  lwcResources = {
+    lwcResource = {
+      propertyMap_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyMap/propertyMap.js")
+        filePath = "lwc/propertyMap/propertyMap.js"
+      }
+      propertyMap_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyMap/propertyMap.html")
+        filePath = "lwc/propertyMap/propertyMap.html"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.PropertySelected
+    },
+    {
+      reference = salesforce.Property__c
+    },
+  ]
+}

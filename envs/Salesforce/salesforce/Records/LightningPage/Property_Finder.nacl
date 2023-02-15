@@ -1,0 +1,66 @@
+salesforce.LightningPage Property_Finder {
+  fullName = "Property_Finder"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "propertyFilter"
+            identifier = "propertyFilter"
+          }
+        },
+      ]
+      name = "left"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "auraPropertyListMap"
+            identifier = "auraPropertyListMap"
+          }
+        },
+      ]
+      name = "center"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "propertySummary"
+            identifier = "propertySummary"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "daysOnMarket"
+            identifier = "daysOnMarket"
+          }
+        },
+      ]
+      name = "right"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Property Finder"
+  template = {
+    name = "pageTemplate_2_7_3"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.auraPropertyListMap
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.daysOnMarket
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertyFilter
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertySummary
+    },
+  ]
+}

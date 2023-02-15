@@ -1,0 +1,47 @@
+salesforce.ApexClass PropertyController {
+  apiVersion = 52
+  status = "Active"
+  fullName = "PropertyController"
+  content = file("salesforce/Records/ApexClass/PropertyController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PagedResult
+    },
+    {
+      reference = salesforce.ContentVersion
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Address__c
+    },
+    {
+      reference = salesforce.Property__c.field.Baths__c
+    },
+    {
+      reference = salesforce.Property__c.field.Beds__c
+    },
+    {
+      reference = salesforce.Property__c.field.City__c
+    },
+    {
+      reference = salesforce.Property__c.field.Description__c
+    },
+    {
+      reference = salesforce.Property__c.field.Location__c
+    },
+    {
+      reference = salesforce.Property__c.field.Price__c
+    },
+    {
+      reference = salesforce.Property__c.field.State__c
+    },
+    {
+      reference = salesforce.Property__c.field.Tags__c
+    },
+    {
+      reference = salesforce.Property__c.field.Thumbnail__c
+    },
+  ]
+}

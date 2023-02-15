@@ -1,0 +1,82 @@
+salesforce.LightningPage Property_Explorer {
+  fullName = "Property_Explorer"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "propertyFilter"
+            identifier = "propertyFilter"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "flowLayout"
+                value = "oneColumn"
+              },
+              {
+                name = "flowName"
+                value = "Create_property"
+              },
+            ]
+            componentName = "flowruntime:interview"
+            identifier = "flowruntime_interview"
+          }
+        },
+      ]
+      name = "left"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "propertyTileList"
+            identifier = "propertyTileList"
+          }
+        },
+      ]
+      name = "center"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "propertySummary"
+            identifier = "propertySummary"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "propertyMap"
+            identifier = "propertyMap"
+          }
+        },
+      ]
+      name = "right"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Property Explorer"
+  template = {
+    name = "pageTemplate_2_7_3"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertyFilter
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertyMap
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertySummary
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.propertyTileList
+    },
+  ]
+}

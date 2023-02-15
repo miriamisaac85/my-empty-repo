@@ -1,0 +1,6 @@
+salesforce.SharingRules Broker__c {
+  fullName = "Broker__c"
+  _parent = [
+    salesforce.Broker__c,
+  ]
+}

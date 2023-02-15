@@ -1,0 +1,63 @@
+type salesforce.Contact {
+  salesforce.Text Languages__c {
+    apiName = "Contact.Languages__c"
+    label = "Languages"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist Level__c {
+    apiName = "Contact.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Secondary"
+        default = false
+        label = "Secondary"
+      },
+      {
+        fullName = "Tertiary"
+        default = false
+        label = "Tertiary"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Currency Loan_Amount__c {
+    apiName = "Contact.Loan_Amount__c"
+    externalId = false
+    label = "Loan Amount"
+    precision = 18
+    scale = 0
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox Prequalified__c {
+    apiName = "Contact.Prequalified__c"
+    defaultValue = false
+    externalId = false
+    label = "Prequalified?"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}
