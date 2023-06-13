@@ -400,7 +400,7 @@ type salesforce.EmailMessage {
     apiName = "EmailMessage.EmailTemplateId"
     label = "Email Template ID"
     referenceTo = [
-      "EmailTemplate",
+      salesforce.EmailTemplate,
     ]
     createable = true
     updateable = true

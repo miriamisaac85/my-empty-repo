@@ -37,7 +37,7 @@ type salesforce.WorkflowAlert {
   }
   string template {
     foreignKeyDomain = [
-      "EmailTemplate",
+      salesforce.EmailTemplate,
     ]
   }
   string internalId {

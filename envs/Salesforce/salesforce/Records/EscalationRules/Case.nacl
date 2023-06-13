@@ -25,7 +25,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 120
           notifyCaseOwner = false
@@ -55,7 +55,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 360
           notifyCaseOwner = false
@@ -85,7 +85,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 240
           notifyCaseOwner = false
@@ -115,7 +115,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 480
           notifyCaseOwner = false
@@ -140,7 +140,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 720
           notifyCaseOwner = false
@@ -165,7 +165,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 1440
           notifyCaseOwner = false
@@ -190,7 +190,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 360
           notifyCaseOwner = false
@@ -215,7 +215,7 @@ salesforce.EscalationRules Case {
         ]
         escalationAction = {
           assignedTo = "miriam.isaac@salto.io"
-          assignedToTemplate = "unfiled$public/SupportEscalatedCaseReassignment"
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
           assignedToType = "User"
           minutesToEscalation = 1080
           notifyCaseOwner = false

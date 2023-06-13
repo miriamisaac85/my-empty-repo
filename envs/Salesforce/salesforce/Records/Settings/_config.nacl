@@ -5149,8 +5149,8 @@ salesforce.CampaignSettings {
 }
 salesforce.CaseSettings {
   fullName = "Case"
-  caseAssignNotificationTemplate = "unfiled$public/SupportCaseAssignmentNotification"
-  caseCreateNotificationTemplate = "unfiled$public/SupportCaseCreatedPhoneInquiries"
+  caseAssignNotificationTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseAssignmentNotification@zcd
+  caseCreateNotificationTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseCreatedPhoneInquiries@zcd
   caseFeedItemSettings = {
     characterLimit = 400
     displayFormat = "Default"

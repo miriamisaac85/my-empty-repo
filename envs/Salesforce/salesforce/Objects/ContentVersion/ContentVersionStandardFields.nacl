@@ -414,7 +414,7 @@ type salesforce.ContentVersion {
       "Dashboard",
       "DashboardComponent",
       salesforce.EmailMessage,
-      "EmailTemplate",
+      salesforce.EmailTemplate,
       salesforce.EngagementChannelType,
       "EnhancedLetterhead",
       salesforce.Event,
