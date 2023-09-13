@@ -144,4 +144,15 @@ type salesforce.Account {
     trackFeedHistory = false
     sorted = false
   }
+  salesforce.Date Calendar__c {
+    apiName = "Account.Calendar__c"
+    description = "A date picker"
+    externalId = false
+    inlineHelpText = "Choose a date"
+    label = "Calendar"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }
