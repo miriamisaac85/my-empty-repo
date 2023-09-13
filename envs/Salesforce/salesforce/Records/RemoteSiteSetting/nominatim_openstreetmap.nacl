@@ -1,0 +1,6 @@
+salesforce.RemoteSiteSetting nominatim_openstreetmap {
+  fullName = "nominatim_openstreetmap"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://nominatim.openstreetmap.org"
+}

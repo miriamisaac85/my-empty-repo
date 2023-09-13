@@ -1,0 +1,23 @@
+salesforce.LightningMessageChannel FiltersChange {
+  fullName = "FiltersChange"
+  isExposed = true
+  lightningMessageFields = [
+    {
+      description = "Search Key"
+      fieldName = "searchKey"
+    },
+    {
+      description = "Max Price"
+      fieldName = "maxPrice"
+    },
+    {
+      description = "Minimum number of Bedrooms"
+      fieldName = "minBedrooms"
+    },
+    {
+      description = "Minimum number of Bathrooms"
+      fieldName = "minBathrooms"
+    },
+  ]
+  masterLabel = "Filters Change Message Channel"
+}

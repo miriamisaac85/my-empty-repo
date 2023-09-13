@@ -1,0 +1,17 @@
+type salesforce.PromotionTier {
+  salesforce.Unknown Name {
+    apiName = "PromotionTier.Name"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail PromotionId {
+    apiName = "PromotionTier.PromotionId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Rank {
+    apiName = "PromotionTier.Rank"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

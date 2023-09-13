@@ -1,0 +1,6 @@
+salesforce.SharingRules Property__c {
+  fullName = "Property__c"
+  _parent = [
+    salesforce.Property__c,
+  ]
+}

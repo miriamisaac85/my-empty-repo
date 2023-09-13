@@ -1,0 +1,12 @@
+salesforce.CustomTab Property_Finder {
+  fullName = "Property_Finder"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Property_Finder"
+  label = "Property Finder"
+  motif = "Custom78: Map"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Property_Finder
+    },
+  ]
+}

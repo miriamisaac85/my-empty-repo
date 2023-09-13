@@ -1,0 +1,6 @@
+salesforce.ApexClass GeocodingService {
+  apiVersion = 52
+  status = "Active"
+  fullName = "GeocodingService"
+  content = file("salesforce/Records/ApexClass/GeocodingService.cls")
+}

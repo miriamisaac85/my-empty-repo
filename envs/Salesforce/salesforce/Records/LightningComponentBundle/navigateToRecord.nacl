@@ -1,0 +1,37 @@
+salesforce.LightningComponentBundle navigateToRecord {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Navigate to Record Page"
+  targets = {
+    target = [
+      "lightning__FlowScreen",
+    ]
+  }
+  targetConfigs = {
+    targetConfig = [
+      {
+        targets = "lightning__FlowScreen"
+        property = {
+          name = "recordId"
+          label = "Record Id"
+          type = "String"
+          required = true
+          role = "inputOnly"
+        }
+      },
+    ]
+  }
+  fullName = "navigateToRecord"
+  lwcResources = {
+    lwcResource = {
+      navigateToRecord_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/navigateToRecord/navigateToRecord.js")
+        filePath = "lwc/navigateToRecord/navigateToRecord.js"
+      }
+      navigateToRecord_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/navigateToRecord/navigateToRecord.html")
+        filePath = "lwc/navigateToRecord/navigateToRecord.html"
+      }
+    }
+  }
+}

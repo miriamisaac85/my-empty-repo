@@ -1,0 +1,11 @@
+salesforce.ApexClass GeocodingServiceTest {
+  apiVersion = 52
+  status = "Active"
+  fullName = "GeocodingServiceTest"
+  content = file("salesforce/Records/ApexClass/GeocodingServiceTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.GeocodingService
+    },
+  ]
+}

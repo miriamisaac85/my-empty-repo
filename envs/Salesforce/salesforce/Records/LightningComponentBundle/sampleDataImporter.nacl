@@ -1,0 +1,28 @@
+salesforce.LightningComponentBundle sampleDataImporter {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Sample Property Importer"
+  targets = {
+    target = [
+      "lightning__AppPage",
+    ]
+  }
+  fullName = "sampleDataImporter"
+  lwcResources = {
+    lwcResource = {
+      sampleDataImporter_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/sampleDataImporter/sampleDataImporter.html")
+        filePath = "lwc/sampleDataImporter/sampleDataImporter.html"
+      }
+      sampleDataImporter_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/sampleDataImporter/sampleDataImporter.js")
+        filePath = "lwc/sampleDataImporter/sampleDataImporter.js"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SampleDataController
+    },
+  ]
+}

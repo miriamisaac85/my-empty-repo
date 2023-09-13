@@ -1,0 +1,68 @@
+salesforce.LightningComponentBundle daysOnMarket {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Days on Market"
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__RecordPage",
+      "lightning__HomePage",
+    ]
+  }
+  targetConfigs = {
+    targetConfig = [
+      {
+        targets = "lightning__RecordPage"
+        objects = [
+          {
+            object = "Property__c"
+          },
+        ]
+        supportedFormFactors = {
+          supportedFormFactor = [
+            {
+              type = "Large"
+            },
+            {
+              type = "Small"
+            },
+          ]
+        }
+      },
+    ]
+  }
+  fullName = "daysOnMarket"
+  lwcResources = {
+    lwcResource = {
+      daysOnMarket_css@v = {
+        source = file("salesforce/Records/LightningComponentBundle/daysOnMarket/daysOnMarket.css")
+        filePath = "lwc/daysOnMarket/daysOnMarket.css"
+      }
+      daysOnMarket_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/daysOnMarket/daysOnMarket.js")
+        filePath = "lwc/daysOnMarket/daysOnMarket.js"
+      }
+      daysOnMarket_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/daysOnMarket/daysOnMarket.html")
+        filePath = "lwc/daysOnMarket/daysOnMarket.html"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.PropertySelected
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Date_Listed__c
+    },
+    {
+      reference = salesforce.Property__c.field.Days_On_Market__c
+    },
+  ]
+}

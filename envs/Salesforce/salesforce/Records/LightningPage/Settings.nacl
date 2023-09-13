@@ -1,0 +1,35 @@
+salesforce.LightningPage Settings {
+  fullName = "Settings"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "sampleDataImporter"
+            identifier = "sampleDataImporter"
+          }
+        },
+      ]
+      name = "region1"
+      type = "Region"
+    },
+    {
+      name = "region2"
+      type = "Region"
+    },
+    {
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Settings"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumnsEqualWidth"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningComponentBundle.instance.sampleDataImporter
+    },
+  ]
+}

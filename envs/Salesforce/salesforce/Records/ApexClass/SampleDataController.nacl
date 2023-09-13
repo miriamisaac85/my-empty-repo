@@ -1,0 +1,23 @@
+salesforce.ApexClass SampleDataController {
+  apiVersion = 52
+  status = "Active"
+  fullName = "SampleDataController"
+  content = file("salesforce/Records/ApexClass/SampleDataController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Broker__c
+    },
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Date_Listed__c
+    },
+  ]
+}

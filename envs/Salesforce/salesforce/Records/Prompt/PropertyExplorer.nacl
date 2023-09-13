@@ -1,0 +1,138 @@
+salesforce.Prompt PropertyExplorer {
+  fullName = "PropertyExplorer"
+  masterLabel = "Property Explorer"
+  promptVersions = [
+    {
+      body = "Dreamhouse is a fictitious real estate company that manages its properties and brokers using the Salesforce Platform."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      delayDays = 1
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomLeft"
+      displayType = "FloatingPanel"
+      isPublished = true
+      masterLabel = "Property Explorer Step 1"
+      publishedDate = "2022-10-18"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      startDate = "2020-06-29"
+      stepNumber = 1
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      timesToDisplay = 1
+      title = "Welcome to Dreamhouse Sample App!"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "Sales reps use the \"Property Explorer\" page to look for properties based on certain filters.<br /><br /> Change some filters on the left to filter properties. Then, click on any of the properties to see its details."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomLeft"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Explorer Step 2"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 2
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      title = "Property Explorer"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "This page is composed of Lightning web components arranged in App Builder. App Builder lets you easily reorganize components, change the page layout, add visibility filters and more."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomLeft"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Explorer Step 3"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 3
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      title = "App Builder"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "Components communicate using <a href=\"https://developer.salesforce.com/docs/component-library/bundle/lightning-message-service\" target=\"_blank\">Lightning Message Service</a>. This allows to craft loosely coupled, reusable components."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomLeft"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Explorer Step 4"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 4
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      title = "Lightning Message Service"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "The component in the center of the screen retrieves a paginated and responsive list of properties. Try to resize the browser to verify it!"
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomCenter"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Explorer Step 5"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 5
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      title = "Property List Component"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "The map on the right is built using the <a href=\"https://developer.salesforce.com/docs/component-library/bundle/lightning-map/example\" target=\"_blank\">lightning-map</a> base component, a very handy way to show property locations."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomRight"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Explorer Step 6"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 6
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      title = "lightning-map"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      actionButtonLabel = "Next Tour"
+      actionButtonLink = "/lightning/n/Property_Finder"
+      body = "Now, go to the Property Finder tab or click Next Tour to navigate to the next tour."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomRight"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Explorer Step 7"
+      shouldDisplayActionButton = true
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 7
+      targetPageKey1 = "Property_Explorer"
+      targetPageType = "standard__navItemPage"
+      title = "Next Tour"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+  ]
+}

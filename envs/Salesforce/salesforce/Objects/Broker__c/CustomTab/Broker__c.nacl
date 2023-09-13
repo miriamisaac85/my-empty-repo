@@ -1,0 +1,8 @@
+salesforce.CustomTab Broker__c {
+  fullName = "Broker__c"
+  customObject = true
+  motif = "Custom15: People"
+  _parent = [
+    salesforce.Broker__c,
+  ]
+}

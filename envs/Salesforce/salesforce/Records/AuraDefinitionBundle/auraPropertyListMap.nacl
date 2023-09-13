@@ -1,0 +1,26 @@
+salesforce.AuraDefinitionBundle auraPropertyListMap {
+  apiVersion = 52
+  description = "A Lightning Component Bundle"
+  fullName = "auraPropertyListMap"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/auraPropertyListMap/auraPropertyListMap.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/auraPropertyListMap/auraPropertyListMapController.js")
+  designContent = file("salesforce/Records/AuraDefinitionBundle/auraPropertyListMap/auraPropertyListMap.design")
+  rendererContent = file("salesforce/Records/AuraDefinitionBundle/auraPropertyListMap/auraPropertyListMapRenderer.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/auraPropertyListMap/auraPropertyListMap.css")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/auraPropertyListMap/auraPropertyListMapHelper.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PropertyController
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.FiltersChange
+    },
+    {
+      reference = salesforce.LightningMessageChannel.instance.PropertySelected
+    },
+    {
+      reference = salesforce.StaticResource.instance.leaflet
+    },
+  ]
+}

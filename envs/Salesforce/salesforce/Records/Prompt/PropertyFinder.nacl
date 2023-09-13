@@ -1,0 +1,64 @@
+salesforce.Prompt PropertyFinder {
+  fullName = "PropertyFinder"
+  masterLabel = "Property Finder"
+  promptVersions = [
+    {
+      body = "The \"Property Finder\" page is also composed in App Builder. This time we use a map to show filtered properties locations. Click on any of the map markers to select a property and see its details."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      delayDays = 1
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomLeft"
+      displayType = "FloatingPanel"
+      isPublished = true
+      masterLabel = "Property Finder Step 1"
+      publishedDate = "2022-10-18"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      startDate = "2020-06-29"
+      stepNumber = 1
+      targetPageKey1 = "Property_Finder"
+      targetPageType = "standard__navItemPage"
+      timesToDisplay = 1
+      title = "Property Finder"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "The map component in the center of the screen is built using a third party JavaScript library, provided as <a href=\"https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_resources.htm\" target=\"_blank\">static resource</a>."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomCenter"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Finder Step 2"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 2
+      targetPageKey1 = "Property_Finder"
+      targetPageType = "standard__navItemPage"
+      title = "Third party JavaScript libraries"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+    {
+      body = "Now, select a property. Click on the double arrow icon located next to the property's name in the property summary card. You'll navigate to the property record page and find the next tour."
+      customApplication = salesforce.CustomApplication.instance.Dreamhouse
+      dismissButtonLabel = "Close"
+      displayPosition = "BottomRight"
+      displayType = "FloatingPanel"
+      isPublished = false
+      masterLabel = "Property Finder Step 3"
+      shouldDisplayActionButton = false
+      shouldIgnoreGlobalDelay = true
+      stepNumber = 3
+      targetPageKey1 = "Property_Finder"
+      targetPageType = "standard__navItemPage"
+      title = "Next Tour"
+      userAccess = "Everyone"
+      userProfileAccess = "Everyone"
+      versionNumber = 1
+    },
+  ]
+}

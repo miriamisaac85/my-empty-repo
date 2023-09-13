@@ -1,0 +1,21 @@
+salesforce.LightningComponentBundle propertyTile {
+  apiVersion = 52
+  isExposed = false
+  fullName = "propertyTile"
+  lwcResources = {
+    lwcResource = {
+      propertyTile_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyTile/propertyTile.js")
+        filePath = "lwc/propertyTile/propertyTile.js"
+      }
+      propertyTile_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyTile/propertyTile.html")
+        filePath = "lwc/propertyTile/propertyTile.html"
+      }
+      propertyTile_css@v = {
+        source = file("salesforce/Records/LightningComponentBundle/propertyTile/propertyTile.css")
+        filePath = "lwc/propertyTile/propertyTile.css"
+      }
+    }
+  }
+}

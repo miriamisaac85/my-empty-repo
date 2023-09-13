@@ -1,0 +1,6 @@
+salesforce.StaticResource sample_data_properties {
+  cacheControl = "Private"
+  contentType = "application/json"
+  fullName = "sample_data_properties"
+  content = file("salesforce/Records/StaticResource/sample_data_properties.json")
+}

@@ -1,0 +1,68 @@
+salesforce.LightningComponentBundle brokerCard {
+  apiVersion = 52
+  isExposed = true
+  masterLabel = "Broker Card"
+  targets = {
+    target = [
+      "lightning__RecordPage",
+    ]
+  }
+  targetConfigs = {
+    targetConfig = [
+      {
+        targets = "lightning__RecordPage"
+        objects = [
+          {
+            object = "Property__c"
+          },
+        ]
+        supportedFormFactors = {
+          supportedFormFactor = [
+            {
+              type = "Large"
+            },
+            {
+              type = "Small"
+            },
+          ]
+        }
+      },
+    ]
+  }
+  fullName = "brokerCard"
+  lwcResources = {
+    lwcResource = {
+      brokerCard_html@v = {
+        source = file("salesforce/Records/LightningComponentBundle/brokerCard/brokerCard.html")
+        filePath = "lwc/brokerCard/brokerCard.html"
+      }
+      brokerCard_js@v = {
+        source = file("salesforce/Records/LightningComponentBundle/brokerCard/brokerCard.js")
+        filePath = "lwc/brokerCard/brokerCard.js"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.Broker__c
+    },
+    {
+      reference = salesforce.Broker__c.field.Email__c
+    },
+    {
+      reference = salesforce.Broker__c.field.Mobile_Phone__c
+    },
+    {
+      reference = salesforce.Broker__c.field.Phone__c
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+    {
+      reference = salesforce.Property__c
+    },
+    {
+      reference = salesforce.Property__c.field.Broker__c
+    },
+  ]
+}

@@ -1,0 +1,128 @@
+salesforce.Layout Broker__c_Broker_Layout@uubs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Picture"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Broker__c.field.Picture_IMG__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Broker__c.field.Picture__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Broker__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Broker__c.field.Title__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Broker__c.field.Email__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Broker__c.field.Phone__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Broker__c.field.Mobile_Phone__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Broker__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Broker__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Broker__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "Address__c",
+        "Price__c",
+        "Beds__c",
+        "Baths__c",
+      ]
+      relatedList = salesforce.Property__c.field.Broker__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hR0000001UMHM"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Broker__c-Broker Layout"
+  _parent = [
+    salesforce.Broker__c,
+  ]
+}

@@ -1,0 +1,9 @@
+salesforce.AuraDefinitionBundle pageTemplate_2_7_3 {
+  apiVersion = 52
+  description = "A Lightning Component Bundle"
+  fullName = "pageTemplate_2_7_3"
+  type = "Component"
+  SVGContent = file("salesforce/Records/AuraDefinitionBundle/pageTemplate_2_7_3/pageTemplate_2_7_3.svg")
+  designContent = file("salesforce/Records/AuraDefinitionBundle/pageTemplate_2_7_3/pageTemplate_2_7_3.design")
+  markup = file("salesforce/Records/AuraDefinitionBundle/pageTemplate_2_7_3/pageTemplate_2_7_3.cmp")
+}
