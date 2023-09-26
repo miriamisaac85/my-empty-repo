@@ -290,7 +290,7 @@ type salesforce.Account {
   compactLayoutAssignment = "Account_Compact_Layout"
   enableEnhancedLookup = true
   enableFeeds = true
-  enableHistory = false
+  enableHistory = true
   searchLayouts = {
     customTabListAdditionalFields = [
       "ACCOUNT.NAME",
@@ -332,5 +332,7 @@ type salesforce.Account {
     Name = salesforce.Account.field.Name
     OwnerId = salesforce.Account.field.OwnerId
     SBQQ__TaxExempt__c = salesforce.Account.field.SBQQ__TaxExempt__c
+  }
+  historyTrackedFields = {
   }
 }

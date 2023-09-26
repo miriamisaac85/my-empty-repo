@@ -1,67 +1,34 @@
 type salesforce.Account {
   salesforce.Picklist Active__c {
     apiName = "Account.Active__c"
-    description = "Whether this account is currently active or not."
+    description = "New description"
     externalId = false
     label = "Active"
     
     valueSet = [
       {
-        fullName = "Active_Demo"
+        fullName = "No"
         default = false
-        label = "Active_Demo"
+        label = "No"
       },
       {
-        fullName = "Active"
+        fullName = "Yes"
         default = false
-        isActive = false
-        label = "Active"
+        label = "Yes"
       },
       {
-        fullName = "Churn never happens"
+        fullName = "Maybe"
         default = false
-        isActive = false
-        label = "Churn never happens"
+        label = "Maybe"
       },
       {
-        fullName = "Churn never happens until it does"
+        fullName = "Salto"
         default = false
-        isActive = false
-        label = "Churn never happens until it does"
-      },
-      {
-        fullName = "Churned"
-        default = false
-        isActive = false
-        label = "Churned"
-      },
-      {
-        fullName = "Inactive"
-        default = false
-        isActive = false
-        label = "Inactive"
-      },
-      {
-        fullName = "Just This Once"
-        default = false
-        isActive = false
-        label = "Just This Once"
-      },
-      {
-        fullName = "Nir's Demo"
-        default = false
-        isActive = false
-        label = "Nir's Demo"
-      },
-      {
-        fullName = "Pending"
-        default = false
-        isActive = false
-        label = "Pending"
+        label = "Salto"
       },
     ]
     sorted = false
-    restricted = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -75,96 +42,12 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
-  salesforce.Number LiamScore__c {
-    apiName = "Account.LiamScore__c"
-    externalId = false
-    label = "Liam Score"
-    precision = 18
-    scale = 0
-    
-    unique = false
-    createable = true
-    updateable = true
-    queryable = true
-  }
-  salesforce.Picklist NewTier__c {
-    apiName = "Account.NewTier__c"
-    externalId = false
-    label = "NewTier"
-    
-    valueSet = [
-      {
-        fullName = "Small Business"
-        default = false
-        label = "Small Business"
-      },
-      {
-        fullName = "Enterprise"
-        default = false
-        label = "Enterprise"
-      },
-      {
-        fullName = "Key Accounts"
-        default = false
-        label = "Key Accounts"
-      },
-    ]
-    sorted = false
-    restricted = true
-    createable = true
-    updateable = true
-    queryable = true
-  }
-  salesforce.Text Notes__c {
-    apiName = "Account.Notes__c"
-    externalId = false
-    label = "Notes"
-    length = 200
-    
-    unique = false
-    createable = true
-    updateable = true
-    caseSensitive = false
-    queryable = true
-  }
-  salesforce.Number NumOfResorts__c {
-    apiName = "Account.NumOfResorts__c"
-    externalId = false
-    label = "Number Of Resorts"
-    precision = 18
-    scale = 0
-    
-    unique = false
-    createable = true
-    updateable = true
-    queryable = true
-  }
-  salesforce.Number NumericField2__c {
-    apiName = "Account.NumericField2__c"
-    externalId = false
-    label = "NumericField2"
-    precision = 18
-    scale = 0
-    
-    unique = false
-    createable = true
-    updateable = true
-    queryable = true
-  }
-  salesforce.FormulaNumber Power_of_1__c {
-    apiName = "Account.Power_of_1__c"
-    externalId = false
-    formula = "1"
-    formulaTreatBlanksAs = "BlankAsZero"
-    label = "Accounts"
-    precision = 18
-    scale = 0
-    unique = false
-    createable = false
-    updateable = false
-    queryable = true
-    _hidden_value = true
-  }
+  
+  
+  
+  
+  
+  
   salesforce.Checkbox SBQQ__AssetQuantitiesCombined__c {
     apiName = "Account.SBQQ__AssetQuantitiesCombined__c"
     defaultValue = false
@@ -460,18 +343,7 @@ type salesforce.Account {
       },
     ]
   }
-  salesforce.Text Salto_test__c {
-    apiName = "Account.Salto_test__c"
-    externalId = false
-    label = "Salto test NEW"
-    length = 255
-    
-    unique = false
-    createable = true
-    updateable = true
-    caseSensitive = false
-    queryable = true
-  }
+  
   salesforce.Number Score__c {
     apiName = "Account.Score__c"
     description = "Denotes the max marketing score of any contact in this account"
@@ -485,69 +357,8 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
-  salesforce.Url Secondary_Domain__c {
-    apiName = "Account.Secondary_Domain__c"
-    externalId = false
-    label = "Secondary Domain"
-    
-    createable = true
-    updateable = true
-    queryable = true
-  }
-  salesforce.Picklist Tier__c {
-    apiName = "Account.Tier__c"
-    description = "Account Tiering for Enterprise, Mid Market, Small business etc."
-    externalId = false
-    inlineHelpText = "Account tiering by size."
-    label = "Tier"
-    
-    valueSet = [
-      {
-        fullName = "Small Business"
-        default = false
-        label = "Small Business"
-      },
-      {
-        fullName = "Enterprise"
-        default = false
-        label = "Enterprise"
-      },
-      {
-        fullName = "Key Accounts"
-        default = false
-        label = "Key Accounts - updated!"
-      },
-      {
-        fullName = "Government"
-        default = false
-        isActive = false
-        label = "Government"
-      },
-      {
-        fullName = "Healthcare"
-        default = false
-        isActive = false
-        label = "Healthcare"
-      },
-      {
-        fullName = "Medium Business"
-        default = false
-        isActive = false
-        label = "Medium Business"
-      },
-      {
-        fullName = "NewTierOnlyInEnv2"
-        default = false
-        isActive = false
-        label = "NewTierOnlyInEnv3"
-      },
-    ]
-    sorted = false
-    restricted = true
-    createable = true
-    updateable = true
-    queryable = true
-  }
+  
+  
   salesforce.Lookup Yariv_ref__c {
     apiName = "Account.Yariv_ref__c"
     deleteConstraint = "SetNull"
@@ -561,6 +372,62 @@ type salesforce.Account {
     relationshipLabel = "Accounts"
     relationshipName = "Accounts"
     
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text NetSuite_Id__c {
+    apiName = "Account.NetSuite_Id__c"
+    externalId = false
+    label = "NetSuite Id"
+    length = 200
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number Crazy_Important__c {
+    apiName = "Account.Crazy_Important__c"
+    defaultValueFormula = "42"
+    description = "This is a really important field ??"
+    externalId = false
+    label = "Crazy Important"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaNumber Wildly_Important__c {
+    apiName = "Account.Wildly_Important__c"
+    description = "A Wildly important field"
+    externalId = false
+    formula = "Crazy_Important__c * 3.1415"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Wildly Important"
+    precision = 18
+    scale = 2
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account.field.Crazy_Important__c
+      },
+    ]
+  }
+  salesforce.Number SalesScore__c {
+    apiName = "Account.SalesScore__c"
+    description = "Denotes the max sales score of any contact in this account"
+    externalId = false
+    label = "Score"
+    precision = 18
+    scale = 0
+    unique = false
     createable = true
     updateable = true
     queryable = true

@@ -87,4 +87,10 @@ salesforce.Layout SBQQ__Cost__c_SBQQ__Cost_Layout@uuuubuus {
       reference = salesforce.InstalledPackage.instance.SBQQ
     },
   ]
+  miniLayout = {
+    fields = [
+      "SBQQ__UnitCost__c",
+      "SBQQ__Product__c",
+    ]
+  }
 }

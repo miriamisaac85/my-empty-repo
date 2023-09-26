@@ -124,6 +124,16 @@ type salesforce.SBQQ__ProcessInput__c {
         default = false
         label = "IntegerInput__c"
       },
+      {
+        fullName = "Type_of_License__c"
+        default = false
+        label = "Type_of_License__c"
+      },
+      {
+        fullName = "Subscription_License_Type__c"
+        default = false
+        label = "Subscription_License_Type__c"
+      },
     ]
     sorted = false
     restricted = false
@@ -261,6 +271,16 @@ type salesforce.SBQQ__ProcessInput__c {
         default = false
         label = "Product Family"
       },
+      {
+        fullName = "Type_of_License__c"
+        default = false
+        label = "Type_of_License__c"
+      },
+      {
+        fullName = "Subscription_License_Type__c"
+        default = false
+        label = "Subscription_License_Type__c"
+      },
     ]
     sorted = false
     restricted = false
@@ -286,6 +306,76 @@ type salesforce.SBQQ__ProcessInput__c {
     writeRequiresMasterRead = false
     createable = true
     updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Type_of_License__c {
+    apiName = "SBQQ__ProcessInput__c.Type_of_License__c"
+    externalId = false
+    label = "Type of License"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Perpetual"
+        default = false
+        label = "Perpetual"
+      },
+      {
+        fullName = "Subscription"
+        default = false
+        label = "Subscription"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Subscription_License_Type__c {
+    apiName = "SBQQ__ProcessInput__c.Subscription_License_Type__c"
+    externalId = false
+    label = "Subscription License Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Pre Paid"
+        default = false
+        label = "Pre Paid"
+      },
+      {
+        fullName = "Pay as you go"
+        default = false
+        label = "Pay as you go"
+      },
+      {
+        fullName = "Evergreen"
+        default = false
+        isActive = false
+        label = "Evergreen"
+      },
+      {
+        fullName = "One-time"
+        default = false
+        isActive = false
+        label = "One-time"
+      },
+      {
+        fullName = "Pre-Paid Overage Use"
+        default = false
+        isActive = false
+        label = "Pre-Paid Overage Use"
+      },
+      {
+        fullName = "Renewable"
+        default = false
+        isActive = false
+        label = "Renewable"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
     queryable = true
   }
 }
