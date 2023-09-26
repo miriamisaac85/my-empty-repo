@@ -1,0 +1,18 @@
+salesforce.ApexClass SBQQ__SearchFilterDAOTest {
+  apiVersion = 49
+  packageVersions = [
+    {
+      majorNumber = 228
+      minorNumber = 7
+      namespace = "SBQQ"
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__SearchFilterDAOTest"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

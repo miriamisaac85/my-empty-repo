@@ -1,0 +1,18 @@
+salesforce.ApexClass SBQQ__MassQuoteDocumentSenderTests {
+  apiVersion = 49
+  packageVersions = [
+    {
+      majorNumber = 228
+      minorNumber = 7
+      namespace = "SBQQ"
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__MassQuoteDocumentSenderTests"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}
