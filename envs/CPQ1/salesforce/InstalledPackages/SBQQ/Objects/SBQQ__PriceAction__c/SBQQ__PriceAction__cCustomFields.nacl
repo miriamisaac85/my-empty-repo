@@ -52,6 +52,16 @@ type salesforce.SBQQ__PriceAction__c {
         default = false
         label = "Explanation"
       },
+      {
+        fullName = "SBQQ__Quantity__c"
+        default = false
+        label = "SBQQ__Quantity__c"
+      },
+      {
+        fullName = "SBQQ__ListPrice__c"
+        default = false
+        label = "SBQQ__ListPrice__c"
+      },
     ]
     sorted = false
     restricted = false
@@ -96,6 +106,18 @@ type salesforce.SBQQ__PriceAction__c {
             "Quote",
             "Quote Line",
             "Product Option",
+          ]
+        },
+        {
+          valueName = "SBQQ__Quantity__c"
+          controllingFieldValue = [
+            "Quote Line",
+          ]
+        },
+        {
+          valueName = "SBQQ__ListPrice__c"
+          controllingFieldValue = [
+            "Quote Line",
           ]
         },
         {

@@ -223,8 +223,8 @@ type salesforce.SBQQ__QuoteTerm__c {
     description = "Indicates if the term is standard, custom, or modified."
     externalId = false
     formula = '''
-IF(AND(ISBLANK(SBQQ__Quote__c),ISBLANK(SBQQ__StandardTerm__c)), $Label.sbqq__lbl_standard,
-  IF(AND(NOT(ISBLANK(SBQQ__Quote__c)),ISBLANK(SBQQ__StandardTerm__c)), $Label.sbqq__lbl_custom, $Label.sbqq__lbl_modified))
+IF(AND(ISBLANK(SBQQ__Quote__c),ISBLANK(SBQQ__StandardTerm__c)), $Label.SBQQ__lbl_standard,
+  IF(AND(NOT(ISBLANK(SBQQ__Quote__c)),ISBLANK(SBQQ__StandardTerm__c)), $Label.SBQQ__lbl_custom, $Label.SBQQ__lbl_modified))
 '''
     formulaTreatBlanksAs = "BlankAsZero"
     inlineHelpText = "Indicates if the term is standard, custom, or modified."

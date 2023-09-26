@@ -247,7 +247,7 @@ type salesforce.SBQQ__Quote__c {
   enableEnhancedLookup = false
   enableFeeds = false
   enableHistory = true
-  enableLicensing = false
+  enableLicensing = true
   enableReports = true
   enableSearch = true
   enableSharing = true

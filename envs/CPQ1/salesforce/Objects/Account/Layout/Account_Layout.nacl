@@ -218,7 +218,7 @@ salesforce.Layout Account_Account_Layout@bs {
         sortOrder = 7
       },
       {
-        actionName = "SendEmail"
+        actionName = salesforce.QuickAction.instance.SendEmail
         actionType = "QuickAction"
         sortOrder = 8
       },
@@ -263,7 +263,7 @@ salesforce.Layout Account_Account_Layout@bs {
         quickActionName = salesforce.QuickAction.instance.NewTask
       },
       {
-        quickActionName = "SendEmail"
+        quickActionName = salesforce.QuickAction.instance.SendEmail
       },
     ]
   }

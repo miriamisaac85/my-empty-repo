@@ -1288,4 +1288,28 @@ type salesforce.SBQQ__Subscription__c {
     updateable = true
     queryable = true
   }
+  salesforce.Picklist SBQQ__SubscriptionPricing__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionPricing__c"
+    deprecated = false
+    description = "Method of calculating the subscription price."
+    externalId = false
+    inlineHelpText = "Method of calculating the subscription price."
+    label = "Subscription Pricing"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Fixed Price"
+        default = false
+        label = "Fixed Price"
+      },
+      {
+        fullName = "Percent Of Total"
+        default = false
+        label = "Percent Of Total"
+      },
+    ]
+    sorted = false
+    restricted = false
+    _hidden_value = true
+  }
 }

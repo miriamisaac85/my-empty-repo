@@ -18,6 +18,11 @@ type salesforce.SBQQ__ProductAction__c {
         default = false
         label = "Product Family"
       },
+      {
+        fullName = "Feature_Name__c"
+        default = false
+        label = "Feature_Name__c"
+      },
     ]
     sorted = false
     restricted = false
