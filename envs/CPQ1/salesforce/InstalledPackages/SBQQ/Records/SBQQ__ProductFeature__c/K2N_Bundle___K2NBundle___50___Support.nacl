@@ -1,0 +1,7 @@
+salesforce.SBQQ__ProductFeature__c K2N_Bundle___K2NBundle___50___Support@suuuuuuuuu {
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.K2N_Bundle___K2NBundle@suuu
+  SBQQ__MinOptionCount__c = 0
+  SBQQ__Number__c = 50
+  Name = "Support"
+  _alias = "K2NBundle K2N Bundle Support"
+}

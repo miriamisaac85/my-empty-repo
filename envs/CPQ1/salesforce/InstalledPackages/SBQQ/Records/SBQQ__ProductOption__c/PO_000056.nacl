@@ -1,0 +1,15 @@
+salesforce.SBQQ__ProductOption__c PO_000056@b {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__Bundled__c = false
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.V6_Bundle_Auto___V6BundleAuto@ssuuu
+  SBQQ__DiscountedByPackage__c = false
+  SBQQ__Number__c = 305
+  SBQQ__OptionalSKU__c = salesforce.Product2.instance.Type_A_JBOD_with_19200GB__J__Enclosure_shelf___KITLASHJ01920@sssssjkssuuu
+  SBQQ__QuantityEditable__c = false
+  SBQQ__Required__c = false
+  SBQQ__Selected__c = false
+  SBQQ__System__c = false
+  SBQQ__Type__c = "0"
+  SBQQ__UpliftedByPackage__c = false
+  _alias = "PO-000056"
+}

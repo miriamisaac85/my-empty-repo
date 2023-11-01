@@ -1,0 +1,29 @@
+salesforce.LightningComponentBundle SBQQ__quoteTermEditorPage {
+  fullName = "SBQQ__quoteTermEditorPage"
+  lwcResources = {
+    lwcResource = {
+      quoteTermEditorPage_css@v = {
+        source = "(hidden)"
+        filePath = "lwc/quoteTermEditorPage/quoteTermEditorPage.css"
+      }
+      labels_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/quoteTermEditorPage/labels.js"
+      }
+      quoteTermEditorPage_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/quoteTermEditorPage/quoteTermEditorPage.js"
+      }
+      quoteTermEditorPage_html@v = {
+        source = "(hidden)"
+        filePath = "lwc/quoteTermEditorPage/quoteTermEditorPage.html"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  _alias = "SBQQ__quoteTermEditorPage"
+}

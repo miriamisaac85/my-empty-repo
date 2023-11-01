@@ -68,4 +68,16 @@ salesforce.FieldSet SBQQ__Quote__c_SBQQ__CalculatingFields {
     },
   ]
   _alias = "Calculating Fields (SBQQ)"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__Quote__c.field.SBQQ__Distributor__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Quote__c.field.SBQQ__Partner__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
 }

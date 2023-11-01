@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__PaginationContainers {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__PaginationContainers"
   content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__PaginationContainers.cls")

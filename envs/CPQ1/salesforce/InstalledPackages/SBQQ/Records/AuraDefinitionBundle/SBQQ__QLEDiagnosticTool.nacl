@@ -1,5 +1,5 @@
 salesforce.AuraDefinitionBundle SBQQ__QLEDiagnosticTool {
-  apiVersion = 49
+  apiVersion = 57
   description = "Quote Line Editor Diagnostic Tool"
   fullName = "SBQQ__QLEDiagnosticTool"
   type = "Component"

@@ -5,7 +5,7 @@ type salesforce.SBQQ__Cost__c {
     deprecated = false
     description = "Flag to indicate whether the cost is active."
     externalId = false
-    inlineHelpText = "Select the checkbox to activate the cost."
+    inlineHelpText = "Select the checkbox to activate the cost"
     label = "Active"
     trackTrending = false
     createable = true

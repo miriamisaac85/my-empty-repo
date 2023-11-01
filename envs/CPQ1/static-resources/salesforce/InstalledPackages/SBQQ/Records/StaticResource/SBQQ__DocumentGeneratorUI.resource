@@ -129,17 +129,29 @@ confirmOnUncalculatedQuote = (scope, language, qid, tid, dn, of, os, docIds, suc
 		`${scope.namespacePrefix}QueueableJobCheckerExt.getUncalculatedWithSetting`, qid,
 		(result) => {
 			if (result) {
-				if (confirm(scope.documentModel.resources['msg_uncalculated_quote_on_doc_gen'])) {
-					processProposal(scope, language, qid, tid, dn, of, os, docIds, successHandler, errorHandler, operation);
-					return;
-				}
-				else {
-					scope.blockingOperationInProgress = false;
-					scope.$apply();
-					return;
-				}
+				sb.dialog.confirm(
+					(scope.documentModel.resources['msg_uncalculated_quote_on_doc_gen']),
+					{
+						ok: scope.documentModel.resources['ok'],
+						cancel: scope.documentModel.resources['cancel']
+					},
+					(confirmed) => {
+						if (confirmed) {
+							processProposal(scope, language, qid, tid, dn, of, os, docIds, successHandler, errorHandler, operation);
+							return;
+						}
+						else {
+							scope.blockingOperationInProgress = false;
+							scope.$apply();
+							return;
+						}
+					}
+				);
 			}
-			processProposal(scope, language, qid, tid, dn, of, os, docIds, successHandler, errorHandler, operation);
+			else {
+				processProposal(scope, language, qid, tid, dn, of, os, docIds, successHandler, errorHandler, operation);
+			}
+			
 		}
 	);
 };

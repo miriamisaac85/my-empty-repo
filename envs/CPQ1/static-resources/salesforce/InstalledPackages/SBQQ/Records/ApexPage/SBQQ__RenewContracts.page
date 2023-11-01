@@ -1,8 +1,8 @@
-<apex:page standardController="Contract" extensions="SBQQ.RenewContractsController,SBQQ.QueueableJobCheckerExt" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" recordSetVar="contracts" action="{!onInit}" title="{!$Label.sbqq__lbl_renew_contracts}">
+<apex:page standardController="Contract" extensions="SBQQ.RenewContractsController,SBQQ.QueueableJobCheckerExt" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" recordSetVar="contracts" action="{!onInit}" title="{!$Label.SBQQ__lbl_renew_contracts}">
 	<apex:stylesheet value="{!$Resource['sb']}"/>
 	<apex:includeScript value="{!$Resource.SBQQ__QueueableJobChecker}"/>
 	<!-- Gorniak was here  -->
-	<apex:sectionHeader title="{!$Label.sbqq__lbl_renew_contracts}"/>
+	<apex:sectionHeader title="{!$Label.SBQQ__lbl_renew_contracts}"/>
 	<apex:pageMessages id="pageMessages"/>
 	<apex:form >
 		<apex:actionFunction name="displayIndividualMessages" rerender="pageMessages" action="{!displayIndividualFailureMessages}">
@@ -11,10 +11,10 @@
 		<apex:actionFunction name="displayCheckerErrorMessage" rerender="pageMessages" action="{!displayCheckerErrorMessage}">
 			<apex:param name="errMsg" value=""/>
 		</apex:actionFunction>
-	<apex:pageBlock title="{!$Label.sbqq__lbl_select_master_contract}">
+	<apex:pageBlock title="{!$Label.SBQQ__lbl_select_master_contract}">
 		<apex:pageBlockButtons >
-			<apex:commandButton value="{!$Label.sbqq__lbl_renew}" action="{!onRenew}"/>
-			<apex:commandButton value="{!$Label.sbqq__lbl_cancel_renew}" action="{!onCancel}"/>
+			<apex:commandButton value="{!$Label.SBQQ__lbl_renew}" action="{!onRenew}"/>
+			<apex:commandButton value="{!$Label.SBQQ__lbl_cancel_renew}" action="{!onCancel}"/>
 		</apex:pageBlockButtons>
 
 		<apex:inputHidden id="masterContractId" value="{!masterContractId}" />

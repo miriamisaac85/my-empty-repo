@@ -714,4 +714,28 @@ type salesforce.SBQQ__ProductOption__c {
     updateable = true
     queryable = true
   }
+  salesforce.Number Usable_Capacity__c {
+    apiName = "SBQQ__ProductOption__c.Usable_Capacity__c"
+    externalId = false
+    label = "Usable Capacity"
+    precision = 6
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Feature_Name__c {
+    apiName = "SBQQ__ProductOption__c.Feature_Name__c"
+    externalId = false
+    label = "Feature Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
 }

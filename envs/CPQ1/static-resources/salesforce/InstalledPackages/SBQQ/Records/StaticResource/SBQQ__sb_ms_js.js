@@ -77,7 +77,7 @@ System.register("perfMetrics/MetricsService.js", [], function (_export, _context
 
 			_export("IDLE_RETRIES", IDLE_RETRIES);
 
-			API_VERSION = 48;
+			API_VERSION = 57;
 
 			_export("MetricsService", MetricsService = function () {
 				function MetricsService() {
@@ -424,7 +424,8 @@ System.register("perfMetrics/MetricsService.js", [], function (_export, _context
 							"apiVersion": API_VERSION,
 							"url": window.sb.MetricsService.currentPage.page.attributes.url,
 							"pageStartTime": window.sb.MetricsService.currentPage.pageStartTime,
-							"version": METRICSSERVICE_VERSION
+							"version": METRICSSERVICE_VERSION,
+							"polymerVersion": "P1"
 						};
 
 						if (this._externalLogMetrics) Object.assign(defaultAttrs, this._externalLogMetrics);

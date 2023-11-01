@@ -247,7 +247,7 @@ type salesforce.SBQQ__LookupData__c {
   enableHistory = false
   enableLicensing = false
   enableReports = false
-  enableSearch = false
+  enableSearch = true
   enableSharing = true
   enableStreamingApi = true
   nameField = {

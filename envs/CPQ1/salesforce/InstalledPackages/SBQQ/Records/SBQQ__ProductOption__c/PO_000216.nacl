@@ -1,0 +1,15 @@
+salesforce.SBQQ__ProductOption__c PO_000216@b {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__Bundled__c = false
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.V6_Bundle_Auto___V6BundleAuto@ssuuu
+  SBQQ__DiscountedByPackage__c = false
+  SBQQ__Number__c = 205
+  SBQQ__OptionalSKU__c = salesforce.Product2.instance.Type_B_JBOD_with_960GB__E__Enclosure_shelf___KITLBSHE00960___FG_V6@sssssjkssuuuuuub
+  SBQQ__QuantityEditable__c = false
+  SBQQ__Required__c = false
+  SBQQ__Selected__c = false
+  SBQQ__System__c = false
+  SBQQ__Type__c = "Building Block - Shelf"
+  SBQQ__UpliftedByPackage__c = false
+  _alias = "PO-000216"
+}

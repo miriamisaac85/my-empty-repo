@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__quoteLineActions {
-  apiVersion = 49
+  apiVersion = 57
   label = "quoteLineActions"
   fullName = "SBQQ__quoteLineActions"
   content = "(hidden)"

@@ -1,0 +1,15 @@
+salesforce.SBQQ__DiscountSchedule__c NewRecord {
+  SBQQ__AggregationScope__c = "Quote"
+  SBQQ__ConstraintField__c = salesforce.SBQQ__Quote__c.field.SBQQ__Account__c
+  SBQQ__CrossOrders__c = false
+  SBQQ__CrossProducts__c = false
+  SBQQ__DiscountUnit__c = "Percent"
+  SBQQ__IncludeBundledProducts__c = false
+  SBQQ__PriceScale__c = 2
+  SBQQ__QuoteLineQuantityField__c = "Quantity"
+  SBQQ__Type__c = "Range"
+  SBQQ__UsePriceForAmount__c = false
+  SBQQ__UserDefined__c = false
+  Name = "NewRecord"
+  _alias = "NewRecord"
+}

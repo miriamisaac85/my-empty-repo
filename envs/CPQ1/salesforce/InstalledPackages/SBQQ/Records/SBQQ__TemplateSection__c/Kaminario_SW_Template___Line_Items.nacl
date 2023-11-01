@@ -1,0 +1,13 @@
+salesforce.SBQQ__TemplateSection__c Kaminario_SW_Template___Line_Items@ssuuus {
+  SBQQ__BottomMargin__c = 0
+  SBQQ__ColumnHeaderHidden__c = false
+  SBQQ__Content__c = salesforce.SBQQ__TemplateContent__c.instance.Line_Items___Line_Items@suuus
+  SBQQ__DisplayOrder__c = 20
+  SBQQ__KeepTogether__c = "Auto"
+  SBQQ__KeepWithNext__c = "Auto"
+  SBQQ__QuoteTotalsPrinted__c = false
+  SBQQ__Template__c = salesforce.SBQQ__QuoteTemplate__c.instance.Kaminario_SW_Template@s
+  SBQQ__TopMargin__c = 0
+  Name = "Line Items"
+  _alias = "Kaminario SW Template Line Items"
+}

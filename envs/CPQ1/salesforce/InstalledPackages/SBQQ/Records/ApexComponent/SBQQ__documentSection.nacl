@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__documentSection {
-  apiVersion = 49
+  apiVersion = 57
   description = "Renders specific template section on quote documents."
   label = "Document Section"
   fullName = "SBQQ__documentSection"

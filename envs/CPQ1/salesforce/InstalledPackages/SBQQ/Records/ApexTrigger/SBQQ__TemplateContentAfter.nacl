@@ -1,0 +1,19 @@
+salesforce.ApexTrigger SBQQ__TemplateContentAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 246
+      minorNumber = 1
+      namespace = "SBQQ"
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__TemplateContentAfter"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  _alias = "SBQQ__TemplateContentAfter"
+}

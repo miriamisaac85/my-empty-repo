@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__QuoteCalculatorPlugin {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__QuoteCalculatorPlugin"
   content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__QuoteCalculatorPlugin.cls")
