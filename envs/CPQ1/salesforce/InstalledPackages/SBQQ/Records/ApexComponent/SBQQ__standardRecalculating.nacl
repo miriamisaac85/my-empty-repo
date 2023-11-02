@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__standardRecalculating {
-  apiVersion = 49
+  apiVersion = 57
   label = "standardRecalculating"
   fullName = "SBQQ__standardRecalculating"
   content = "(hidden)"

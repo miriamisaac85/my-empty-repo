@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__OrderException {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__OrderException"
   content = "(hidden)"

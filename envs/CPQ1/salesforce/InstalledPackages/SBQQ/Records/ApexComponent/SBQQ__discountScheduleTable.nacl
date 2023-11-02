@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__discountScheduleTable {
-  apiVersion = 49
+  apiVersion = 57
   label = "discSchedTable"
   fullName = "SBQQ__discountScheduleTable"
   content = "(hidden)"

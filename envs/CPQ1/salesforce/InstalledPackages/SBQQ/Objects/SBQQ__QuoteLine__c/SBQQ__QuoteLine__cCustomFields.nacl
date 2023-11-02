@@ -2199,7 +2199,7 @@ IF(ISBLANK(SBQQ__SubscriptionTerm__c),
   salesforce.Picklist SBQQ__SubscriptionPricing__c {
     apiName = "SBQQ__QuoteLine__c.SBQQ__SubscriptionPricing__c"
     deprecated = false
-    description = "Determines how the subscription on this line item is priced. Blank value means this line contains product that's not a subscription."
+    description = "Method of calculating the subscription price. A blank value indicates that the line item isn't a subscription product."
     externalId = false
     inlineHelpText = "Indicates how the subscription price is calculated. If this is blank, the line items is not a subscription product."
     label = "Subscription Pricing"
@@ -2627,5 +2627,134 @@ IF(SBQQ__Quantity__c == SBQQ__PriorQuantity__c, 0, (SBQQ__ProratedListPrice__c *
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.FormulaNumber Previous_Quantity__c {
+    apiName = "SBQQ__QuoteLine__c.Previous_Quantity__c"
+    externalId = false
+    formula = "SBQQ__PriorQuantity__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Previous Quantity"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PriorQuantity__c
+      },
+    ]
+  }
+  salesforce.FormulaNumber Quantity_TB__c {
+    apiName = "SBQQ__QuoteLine__c.Quantity_TB__c"
+    externalId = false
+    formula = "SBQQ__Quote__r.Quantity_TB__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Quantity TB"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Quote__c
+      },
+      {
+        reference = salesforce.SBQQ__Quote__c.field.Quantity_TB__c
+      },
+    ]
+  }
+  salesforce.Number Usable_Capacity__c {
+    apiName = "SBQQ__QuoteLine__c.Usable_Capacity__c"
+    externalId = false
+    label = "Usable Capacity"
+    precision = 6
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCurrency Premium_SW_support__c {
+    apiName = "SBQQ__QuoteLine__c.Premium_SW_support__c"
+    externalId = false
+    formula = '''
+IF(SBQQ__SubscriptionTerm__c <= 23, 38*SBQQ__SubscriptionTerm__c,
+IF(SBQQ__SubscriptionTerm__c <= 35, 37*SBQQ__SubscriptionTerm__c,
+IF(SBQQ__SubscriptionTerm__c <= 47, 33*SBQQ__SubscriptionTerm__c,
+IF(SBQQ__SubscriptionTerm__c <= 59, 32*SBQQ__SubscriptionTerm__c,
+IF(SBQQ__SubscriptionTerm__c <= 60, 28*SBQQ__SubscriptionTerm__c,
+80
+)))))
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Premium SW support"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SubscriptionTerm__c
+      },
+    ]
+  }
+  salesforce.FormulaCurrency Pre_Paid_SW_Price__c {
+    apiName = "SBQQ__QuoteLine__c.Pre_Paid_SW_Price__c"
+    externalId = false
+    formula = '''
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 23 && SBQQ__Quantity__c <= 999, 84,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 23 && SBQQ__Quantity__c <= 1999, 76,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 23 && SBQQ__Quantity__c <= 4999 , 68,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 23 && SBQQ__Quantity__c > 4999, 60,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 35 && SBQQ__Quantity__c <= 999 , 75.6,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 35 && SBQQ__Quantity__c <= 1999 , 68.4,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 35 && SBQQ__Quantity__c <= 4999 , 61.2,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 35 && SBQQ__Quantity__c > 4999 , 54,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 36 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 47 && SBQQ__Quantity__c <= 999 , 58.8,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 47 && SBQQ__Quantity__c <= 1999 , 53.2,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 47 && SBQQ__Quantity__c <= 4999 , 47.6,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 24 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 47 && SBQQ__Quantity__c > 4999 , 42,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 48 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 59 && SBQQ__Quantity__c <= 999 , 55.944,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 48 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 59  && SBQQ__Quantity__c <= 1999 , 50.616,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 48 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 59  && SBQQ__Quantity__c <= 4999, 45.288,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 48 && SBQQ__Quote__r.SBQQ__SubscriptionTerm__c <= 59 && SBQQ__Quantity__c > 4999 , 39.96,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 60 && SBQQ__Quantity__c <= 999 , 47.04,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 60 && SBQQ__Quantity__c <= 1999, 42.56,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 60 && SBQQ__Quantity__c <= 4999, 38.08,
+IF ( SBQQ__Quote__r.SBQQ__SubscriptionTerm__c >= 60 && SBQQ__Quantity__c > 4999 , 33.6,
+84))))))))))))))))))))
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Pre Paid SW Price"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Quantity__c
+      },
+      {
+        reference = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Quote__c
+      },
+      {
+        reference = salesforce.SBQQ__Quote__c.field.SBQQ__SubscriptionTerm__c
+      },
+    ]
   }
 }

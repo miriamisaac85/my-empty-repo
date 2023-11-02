@@ -1,16 +1,14 @@
 <apex:page controller="SBQQ.ThemeLookupController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" standardStylesheets="false">
-    <apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
-    <apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
     <apex:stylesheet value="{!$Resource['sb']}"/>
 
     <apex:form >
     	<div class="qq sb themePage">
-	        <c:pageHeader title="{!$Label.sbqq__lbl_user_theme_selector}">
+	        <c:pageHeader title="{!$Label.SBQQ__lbl_user_theme_selector}">
 	            <div class="sbButtons">
-	                <apex:commandButton styleClass="sbBtn" value="{!$Label.sbqq__lbl_revert}" action="{!revert}"/>
+	                <apex:commandButton styleClass="sbBtn" value="{!$Label.SBQQ__lbl_revert}" action="{!revert}"/>
 	            </div>
 	            <div class="sbButtons">
-	                <apex:commandButton styleClass="sbBtn sbPrimaryAction" value="{!$Label.sbqq__lbl_save}" action="{!save}"/>
+	                <apex:commandButton styleClass="sbBtn sbPrimaryAction" value="{!$Label.SBQQ__lbl_save}" action="{!save}"/>
 	            </div>
 	        </c:pageHeader>
 
@@ -23,23 +21,23 @@
 	    </div>
     </apex:form>
     <script>
-	    $(document).ready(function() {
-			var tbl = $('table[role=presentation]');
-			tbl.addClass('sbTable');
-
+		const tbl = document.querySelector('table[role=presentation]');
+		tbl.classList.add('sbTable');
+		const rows = tbl.querySelectorAll('input');
+		for (const row of rows || []) {
 			//add event listener to inputs to trigger new style sheet loading on click
-			tbl.find('td input').change(loadNewStyleSheet);
-		});
+			row.addEventListener('click', loadNewStyleSheet);
+		}
 
-		function loadNewStyleSheet() {
-			var selected = $(this).val();
+		function loadNewStyleSheet(elm) {
+			const selected = elm.target.value
 
 			if (selected == '{!noneMarker}') {
-					$('#styleSheet').html('');
+				document.getElementById('styleSheet').innerHTML = '';
 			} else {
-				var docId = (selected.indexOf(':') == 1) ? selected : selected.split(':')[1];
-				var compiledString = '<link class="user" href="/servlet/servlet.FileDownload?file=' + docId + '" rel="stylesheet" type="text/css">';
-				$('#styleSheet').html(compiledString);
+				const docId = (selected.indexOf(':') == 1) ? selected : selected.split(':')[1];
+				const compiledString = '<link class="user" href="/servlet/servlet.FileDownload?file=' + docId + '" rel="stylesheet" type="text/css">';
+				document.getElementById('styleSheet').innerHTML = compiledString;
 			}
 		}
 	</script>

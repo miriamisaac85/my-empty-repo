@@ -1,0 +1,9 @@
+salesforce.SBQQ__ProcessInputCondition__c SW_Only___Subscription_License_Type___Only_on_Sub@suuussuuuss {
+  SBQQ__Active__c = true
+  SBQQ__MasterProcessInput__c = salesforce.SBQQ__ProcessInput__c.instance.SW_Only___Type_of_license@suuuss
+  SBQQ__Operator__c = "equals"
+  SBQQ__ProcessInput__c = salesforce.SBQQ__ProcessInput__c.instance.SW_Only___Subscription_License_Type@suuuss
+  SBQQ__Value__c = "Subscription"
+  Name = "Only on Sub"
+  _alias = "SW Only Subscription License Type Only on Sub"
+}

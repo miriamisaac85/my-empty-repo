@@ -247,7 +247,7 @@ type salesforce.SBQQ__ProductRule__c {
   enableEnhancedLookup = false
   enableFeeds = false
   enableHistory = false
-  enableLicensing = false
+  enableLicensing = true
   enableReports = true
   enableSearch = false
   enableSharing = true

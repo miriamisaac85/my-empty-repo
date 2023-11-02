@@ -1,5 +1,5 @@
 salesforce.ApexPage SBQQ__TemplateSectionHelp {
-  apiVersion = 49
+  apiVersion = 57
   availableInTouch = false
   confirmationTokenRequired = false
   label = "Template Section Help"

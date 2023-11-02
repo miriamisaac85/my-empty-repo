@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__ProductModelTests {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__ProductModelTests"
   content = "(hidden)"

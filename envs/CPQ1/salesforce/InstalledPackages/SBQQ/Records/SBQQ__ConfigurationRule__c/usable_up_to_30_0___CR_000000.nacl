@@ -1,0 +1,7 @@
+salesforce.SBQQ__ConfigurationRule__c usable_up_to_30_0___CR_000000@sssvuuub {
+  SBQQ__Active__c = true
+  SBQQ__ProductFeature__c = salesforce.SBQQ__ProductFeature__c.instance.V6_Bundle_Auto___V6BundleAuto___10___HW_Components@ssuuuuuuuuus
+  SBQQ__ProductRule__c = salesforce.SBQQ__ProductRule__c.instance.usable_up_to_30_0@sssv
+  SBQQ__Product__c = salesforce.Product2.instance.V6_Bundle_Auto___V6BundleAuto@ssuuu
+  _alias = "usable up to 30.0 CR-000000"
+}

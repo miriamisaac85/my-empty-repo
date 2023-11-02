@@ -295,6 +295,11 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
         default = false
         label = "Discount (%)"
       },
+      {
+        fullName = "Usable_Capacity__c"
+        default = false
+        label = "Usable_Capacity__c"
+      },
     ]
     sorted = false
     restricted = false

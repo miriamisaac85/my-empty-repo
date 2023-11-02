@@ -1,0 +1,67 @@
+salesforce.Layout SBQQ__QuoteTemplate__c_nitzan_layout@uuuubu {
+  fullName = "SBQQ__QuoteTemplate__c-nitzan_layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTemplate__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTemplate__c.field.SBQQ__BottomMargin__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTemplate__c.field.SBQQ__LeftMargin__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTemplate__c.field.SBQQ__RightMargin__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTemplate__c.field.SBQQ__TopMargin__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Name",
+      "SBQQ__BottomMargin__c",
+      "SBQQ__LeftMargin__c",
+      "SBQQ__RightMargin__c",
+      "SBQQ__TopMargin__c",
+    ]
+  }
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _alias = "SBQQ__QuoteTemplate__c-nitzan_layout"
+}

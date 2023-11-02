@@ -144,11 +144,6 @@ type salesforce.SBQQ__CustomAction__c {
         label = "Launch External"
       },
       {
-        fullName = "Apply Edit Rules"
-        default = false
-        label = "Apply Edit Rules"
-      },
-      {
         fullName = "Clone with Related"
         default = false
         label = "Clone with Related"
@@ -434,12 +429,6 @@ type salesforce.SBQQ__CustomAction__c {
         },
         {
           valueName = "Launch External"
-          controllingFieldValue = [
-            "Configurator",
-          ]
-        },
-        {
-          valueName = "Apply Edit Rules"
           controllingFieldValue = [
             "Configurator",
           ]
@@ -1784,6 +1773,16 @@ type salesforce.SBQQ__CustomAction__c {
         fullName = "Pricing Guidance"
         default = false
         label = "Pricing Guidance"
+      },
+      {
+        fullName = "Add V6 Bundle"
+        default = false
+        label = "Add V6 Bundle"
+      },
+      {
+        fullName = "Add K2N Bundle"
+        default = false
+        label = "Add K2N Bundle"
       },
     ]
     sorted = false
