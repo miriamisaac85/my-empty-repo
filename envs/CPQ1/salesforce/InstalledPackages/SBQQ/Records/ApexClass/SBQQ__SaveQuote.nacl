@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__SaveQuote {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__SaveQuote"
   content = "(hidden)"

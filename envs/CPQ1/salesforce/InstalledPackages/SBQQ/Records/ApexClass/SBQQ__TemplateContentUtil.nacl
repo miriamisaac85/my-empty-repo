@@ -1,0 +1,19 @@
+salesforce.ApexClass SBQQ__TemplateContentUtil {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__TemplateContentUtil"
+  content = "(hidden)"
+  packageVersions = [
+    {
+      majorNumber = 246
+      minorNumber = 1
+      namespace = "SBQQ"
+    },
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  _alias = "SBQQ__TemplateContentUtil"
+}

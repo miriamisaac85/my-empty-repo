@@ -1,0 +1,9 @@
+salesforce.SBQQ__PriceCondition__c Set_TB_Quantity___4@ssuuu {
+  SBQQ__Field__c = "Product Code"
+  SBQQ__FilterType__c = "Value"
+  SBQQ__Object__c = "Quote Line"
+  SBQQ__Operator__c = "equals"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.Set_TB_Quantity@s
+  SBQQ__Value__c = "K2SWTBUSPNAM"
+  _alias = "Set TB Quantity 4"
+}

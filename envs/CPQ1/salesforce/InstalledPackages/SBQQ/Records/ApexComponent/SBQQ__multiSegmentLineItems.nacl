@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__multiSegmentLineItems {
-  apiVersion = 49
+  apiVersion = 57
   description = "This is a generic template for Visualforce Component. With this template, you may adjust the default elements and values and add new elements and values."
   label = "Multi Segment Line Items"
   fullName = "SBQQ__multiSegmentLineItems"

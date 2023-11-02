@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__customerInfo {
-  apiVersion = 49
+  apiVersion = 57
   description = "Generates XSL-FO tree for the section with customer information."
   label = "Customer Info"
   fullName = "SBQQ__customerInfo"

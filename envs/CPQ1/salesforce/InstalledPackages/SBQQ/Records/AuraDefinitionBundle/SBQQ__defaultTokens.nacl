@@ -1,5 +1,5 @@
 salesforce.AuraDefinitionBundle SBQQ__defaultTokens {
-  apiVersion = 49
+  apiVersion = 57
   description = "defaultTokens"
   fullName = "SBQQ__defaultTokens"
   type = "Tokens"

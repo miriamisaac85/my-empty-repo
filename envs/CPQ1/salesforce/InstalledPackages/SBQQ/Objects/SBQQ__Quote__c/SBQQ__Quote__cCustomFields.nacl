@@ -1029,7 +1029,7 @@ type salesforce.SBQQ__Quote__c {
     deprecated = false
     description = "When an order is created from this quote, the value in this field is copied to the order’s Billing Day of Month field."
     externalId = false
-    inlineHelpText = "When an order is created from this quote, the value in this field is copied to the order’s Billing Day of Month field."
+    inlineHelpText = "Indicates the Proration Day of Month that aligns with Billing Day of Month"
     label = "Proration Day Of Month"
     
     trackTrending = false
@@ -1192,9 +1192,10 @@ type salesforce.SBQQ__Quote__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
+    _hidden_value = true
   }
   salesforce.Picklist SBQQ__QuoteLanguage__c {
     apiName = "SBQQ__Quote__c.SBQQ__QuoteLanguage__c"
@@ -1726,6 +1727,29 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "Select the checkbox to display watermark in the Quote Document."
     label = "Watermark Shown"
     
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Quantity_TB__c {
+    apiName = "SBQQ__Quote__c.Quantity_TB__c"
+    externalId = false
+    label = "Quantity - TB"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency HW_Total_Cost__c {
+    apiName = "SBQQ__Quote__c.HW_Total_Cost__c"
+    externalId = false
+    label = "HW Total Cost"
+    precision = 18
+    scale = 0
     trackTrending = false
     createable = true
     updateable = true

@@ -1,5 +1,5 @@
 salesforce.ApexPage SBQQ__CloneQuoteTemplate {
-  apiVersion = 49
+  apiVersion = 57
   availableInTouch = true
   confirmationTokenRequired = false
   description = "Overrides standard Clone action to inject Clone Template Related page into \"after save\" URL."

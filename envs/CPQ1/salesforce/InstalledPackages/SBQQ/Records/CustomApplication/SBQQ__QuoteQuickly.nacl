@@ -22,6 +22,7 @@ salesforce.CustomApplication SBQQ__QuoteQuickly {
     "standard-Dashboard",
     "standard-Document",
     salesforce.CustomTab.instance.SBQQ__ImportFormat__c,
+    salesforce.CustomTab.instance.SBQQ__LookupData__c,
   ]
   _generated_dependencies = [
     {
@@ -29,4 +30,5 @@ salesforce.CustomApplication SBQQ__QuoteQuickly {
     },
   ]
   _alias = "Salesforce CPQ (SBQQ)"
+  logo = "SBQQ__Salesforce_CPQ_Assets/SBQQ__Salesforce_CPQ_Logo.png"
 }

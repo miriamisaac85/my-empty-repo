@@ -1,12 +1,6 @@
 salesforce.ApexClass SBQQ__CustomLookupControllerTests {
-  apiVersion = 49
-  packageVersions = [
-    {
-      majorNumber = 228
-      minorNumber = 7
-      namespace = "SBQQ"
-    },
-  ]
+  apiVersion = 57
+  
   status = "Active"
   fullName = "SBQQ__CustomLookupControllerTests"
   content = "(hidden)"

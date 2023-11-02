@@ -1,5 +1,5 @@
 salesforce.AuraDefinitionBundle SBQQ__QLEDiagnosticToolApp {
-  apiVersion = 49
+  apiVersion = 57
   description = "Container for QLE Diagnostic Tool"
   fullName = "SBQQ__QLEDiagnosticToolApp"
   type = "Application"

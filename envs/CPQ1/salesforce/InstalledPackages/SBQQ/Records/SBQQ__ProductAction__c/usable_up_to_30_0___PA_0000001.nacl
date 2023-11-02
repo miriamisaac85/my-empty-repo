@@ -1,0 +1,8 @@
+salesforce.SBQQ__ProductAction__c usable_up_to_30_0___PA_0000001@sssvuuub {
+  SBQQ__FilterField__c = "Product Family"
+  SBQQ__FilterValue__c = "K-Block 1"
+  SBQQ__Required__c = true
+  SBQQ__Rule__c = salesforce.SBQQ__ProductRule__c.instance.usable_up_to_30_0@sssv
+  SBQQ__Type__c = "Add"
+  _alias = "usable up to 30.0 PA-0000001"
+}

@@ -1,0 +1,7 @@
+salesforce.SBQQ__ProductAction__c usable_up_to_30_0___PA_0000002@sssvuuub {
+  SBQQ__Product__c = salesforce.Product2.instance.Premium_24x7x4_HW_support_maint_per_month___K2HWSMONAPR___S_M@sssessuuuuuue
+  SBQQ__Required__c = true
+  SBQQ__Rule__c = salesforce.SBQQ__ProductRule__c.instance.usable_up_to_30_0@sssv
+  SBQQ__Type__c = "Add"
+  _alias = "usable up to 30.0 PA-0000002"
+}

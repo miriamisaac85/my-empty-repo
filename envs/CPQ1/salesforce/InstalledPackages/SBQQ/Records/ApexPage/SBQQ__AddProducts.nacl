@@ -1,5 +1,5 @@
 salesforce.ApexPage SBQQ__AddProducts {
-  apiVersion = 49
+  apiVersion = 57
   availableInTouch = false
   confirmationTokenRequired = false
   label = "AddProducts"

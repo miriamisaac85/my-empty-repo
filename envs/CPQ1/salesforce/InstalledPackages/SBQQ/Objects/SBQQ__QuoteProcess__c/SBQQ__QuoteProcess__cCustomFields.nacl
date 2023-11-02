@@ -83,4 +83,50 @@ type salesforce.SBQQ__QuoteProcess__c {
     updateable = true
     queryable = true
   }
+  salesforce.Picklist Subscription_License_Type__c {
+    apiName = "SBQQ__QuoteProcess__c.Subscription_License_Type__c"
+    externalId = false
+    label = "Subscription License Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Pre Paid"
+        default = false
+        label = "Pre Paid"
+      },
+      {
+        fullName = "Pay as you go"
+        default = false
+        label = "Pay as you go"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type_of_License__c {
+    apiName = "SBQQ__QuoteProcess__c.Type_of_License__c"
+    externalId = false
+    label = "Type of License"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Perpetual"
+        default = false
+        label = "Perpetual"
+      },
+      {
+        fullName = "Subscription"
+        default = false
+        label = "Subscription"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

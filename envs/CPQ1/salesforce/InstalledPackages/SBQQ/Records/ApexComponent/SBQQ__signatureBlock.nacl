@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__signatureBlock {
-  apiVersion = 49
+  apiVersion = 57
   description = "Renders signature block on a quote document."
   label = "Signature Block"
   fullName = "SBQQ__signatureBlock"

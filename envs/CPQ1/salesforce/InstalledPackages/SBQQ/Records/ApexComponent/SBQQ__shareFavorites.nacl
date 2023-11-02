@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__shareFavorites {
-  apiVersion = 49
+  apiVersion = 57
   label = "shareFavorites"
   fullName = "SBQQ__shareFavorites"
   content = "(hidden)"
