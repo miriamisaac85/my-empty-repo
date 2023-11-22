@@ -1,0 +1,10 @@
+salesforce.SBQQ__ProductRule__c usable_up_to_30_0@sssv {
+  SBQQ__Active__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "Always"
+  SBQQ__EvaluationOrder__c = 50
+  SBQQ__Scope__c = "Product"
+  SBQQ__Type__c = "Selection"
+  Name = "usable up to 30.0"
+  _alias = "usable up to 30.0"
+}
