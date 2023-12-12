@@ -1,0 +1,14 @@
+salesforce.SBQQ__DiscountSchedule__c TestDiscountSchedule {
+  SBQQ__CrossOrders__c = false
+  SBQQ__CrossProducts__c = false
+  SBQQ__DiscountUnit__c = "Percent"
+  SBQQ__IncludeBundledProducts__c = false
+  SBQQ__PriceScale__c = 2
+  SBQQ__Pricebook__c = salesforce.Pricebook2.instance.Standard_Price_Book@s
+  SBQQ__QuoteLineQuantityField__c = "Quantity"
+  SBQQ__Type__c = "Range"
+  SBQQ__UsePriceForAmount__c = false
+  SBQQ__UserDefined__c = false
+  Name = "TestDiscountSchedule"
+  _alias = "TestDiscountSchedule"
+}
