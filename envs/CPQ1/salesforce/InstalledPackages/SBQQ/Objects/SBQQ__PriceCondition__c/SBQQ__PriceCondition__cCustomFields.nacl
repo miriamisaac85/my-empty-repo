@@ -4,7 +4,7 @@ type salesforce.SBQQ__PriceCondition__c {
     deprecated = false
     description = "Field on Quote Line or Product Option object that is evaluated by this condition."
     externalId = false
-    inlineHelpText = "Choose a field on the target object."
+    inlineHelpText = "Choose the field that should contain the value you enter in the Value field."
     label = "Field"
     trackTrending = false
     valueSet = [
@@ -12,6 +12,11 @@ type salesforce.SBQQ__PriceCondition__c {
         fullName = "Product Code"
         default = false
         label = "Product Code"
+      },
+      {
+        fullName = "Quantity_TB__c"
+        default = false
+        label = "Quantity_TB__c"
       },
     ]
     sorted = false
