@@ -1,0 +1,7 @@
+salesforce.SBQQ__ProductAction__c DP_Product_Rule___PA_0000010@ssuuub {
+  SBQQ__Product__c = salesforce.Product2.instance.DP_Product_2___dp_product_2@ssuuuuu
+  SBQQ__Required__c = true
+  SBQQ__Rule__c = salesforce.SBQQ__ProductRule__c.instance.DP_Product_Rule@s
+  SBQQ__Type__c = "Add"
+  _alias = "DP Product Rule PA-0000010"
+}

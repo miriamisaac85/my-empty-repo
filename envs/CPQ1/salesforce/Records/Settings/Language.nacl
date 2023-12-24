@@ -1,0 +1,12 @@
+salesforce.LanguageSettings {
+  fullName = "Language"
+  enableEndUserLanguages = false
+  enableICULocaleDateFormat = false
+  enableLocalNamesForStdObjects = false
+  enablePlatformLanguages = false
+  enableTranslationWorkbench = false
+  useLanguageFallback = false
+  enableLanguageExtensionPackage = "false"
+  enableLocaleInsensitiveFiltering = "false"
+  _alias = "Language"
+}

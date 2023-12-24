@@ -1,0 +1,12 @@
+salesforce.DocumentFolder SBQQ__Salesforce_CPQ_Assets {
+  accessType = "Public"
+  name = "Salesforce CPQ Assets"
+  publicFolderAccess = "ReadOnly"
+  fullName = "SBQQ__Salesforce_CPQ_Assets"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  _alias = "SBQQ__Salesforce_CPQ_Assets"
+}
