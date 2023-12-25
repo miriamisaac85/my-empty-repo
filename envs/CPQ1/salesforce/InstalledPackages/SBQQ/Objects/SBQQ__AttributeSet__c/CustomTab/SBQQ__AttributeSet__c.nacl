@@ -1,7 +1,7 @@
 salesforce.CustomTab SBQQ__AttributeSet__c {
   fullName = "SBQQ__AttributeSet__c"
   customObject = true
-  motif = "Custom42: Treasure chest"
+  motif = "Custom42: Treasure"
   _parent = [
     salesforce.SBQQ__AttributeSet__c,
   ]
