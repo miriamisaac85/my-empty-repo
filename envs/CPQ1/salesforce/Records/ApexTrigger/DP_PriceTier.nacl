@@ -1,0 +1,19 @@
+salesforce.ApexTrigger DP_PriceTier {
+  apiVersion = 60
+  packageVersions = [
+    {
+      majorNumber = 228
+      minorNumber = 7
+      namespace = "SBQQ"
+    },
+  ]
+  status = "Active"
+  fullName = "DP_PriceTier"
+  content = file("salesforce/Records/ApexTrigger/DP_PriceTier.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.SBQQ__PriceTier__c
+    },
+  ]
+  _alias = "DP_PriceTier"
+}

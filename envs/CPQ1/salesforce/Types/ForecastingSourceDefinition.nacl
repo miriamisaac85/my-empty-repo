@@ -1,0 +1,129 @@
+type salesforce.ForecastingSourceDefinition {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string categoryField {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Opportunity.ForecastCategoryName",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string dateField {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Opportunity.CloseDate",
+        "OpportunityLineItem.ServiceDate",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string familyField {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Opportunity.Loss_Reason__c",
+        "OpportunityLineItem.SBQQ__SubscriptionType__c",
+        "Product2.Family",
+        "Product2.SBQQ__AssetAmendmentBehavior__c",
+        "Product2.SBQQ__AssetConversion__c",
+        "Product2.SBQQ__BillingFrequency__c",
+        "Product2.SBQQ__BillingType__c",
+        "Product2.SBQQ__BlockPricingField__c",
+        "Product2.SBQQ__ChargeType__c",
+        "Product2.SBQQ__ConfigurationEvent__c",
+        "Product2.SBQQ__ConfigurationFieldSet__c",
+        "Product2.SBQQ__ConfigurationType__c",
+        "Product2.SBQQ__CustomerCommunityAvailability__c",
+        "Product2.SBQQ__DefaultPricingTable__c",
+        "Product2.SBQQ__DynamicPricingConstraint__c",
+        "Product2.SBQQ__GenerateContractedPrice__c",
+        "Product2.SBQQ__OptionLayout__c",
+        "Product2.SBQQ__OptionSelectionMethod__c",
+        "Product2.SBQQ__PricingMethod__c",
+        "Product2.SBQQ__SubscriptionBase__c",
+        "Product2.SBQQ__SubscriptionCategory__c",
+        "Product2.SBQQ__SubscriptionPricing__c",
+        "Product2.SBQQ__SubscriptionType__c",
+        "Product2.SBQQ__TermDiscountLevel__c",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  serviceid fullName {
+  }
+  boolean isProtected {
+  }
+  string masterLabel {
+  }
+  string measureField {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Opportunity.Amount",
+        "Opportunity.TotalOpportunityQuantity",
+        "OpportunityLineItem.Quantity",
+        "OpportunityLineItem.TotalPrice",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string sourceObject {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Opportunity",
+        "OpportunityLineItem",
+        "Product2",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  string territory2Field {
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string userField {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Opportunity.OwnerId",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "forecastingSourceDefinition"
+  dirName = "forecastingSourceDefinitions"
+  metadataType = "ForecastingSourceDefinition"
+}

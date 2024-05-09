@@ -1,0 +1,30 @@
+type salesforce.Contact {
+  salesforce.Picklist Department__c {
+    apiName = "Contact.Department__c"
+    externalId = false
+    label = "Department"
+    
+    valueSet = [
+      {
+        fullName = "Finance"
+        default = false
+        label = "Finance in the best!"
+      },
+      {
+        fullName = "Sales"
+        default = false
+        label = "Sales"
+      },
+      {
+        fullName = "Engineering"
+        default = false
+        label = "Engineering"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}
