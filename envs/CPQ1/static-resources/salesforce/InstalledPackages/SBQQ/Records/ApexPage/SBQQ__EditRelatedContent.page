@@ -1,4 +1,4 @@
-<apex:page id="page" standardController="SBQQ__RelatedContent__c" extensions="SBQQ.RelatedContentController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" title="{!$Label.sbqq__lbl_edit_related_content}">
+<apex:page id="page" standardController="SBQQ__RelatedContent__c" extensions="SBQQ.RelatedContentController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" title="{!$Label.SBQQ__lbl_edit_related_content}">
     <apex:sectionHeader title="Related Content Edit" subtitle="New Related Content"/>
         
     <apex:pageMessages id="messages"/>

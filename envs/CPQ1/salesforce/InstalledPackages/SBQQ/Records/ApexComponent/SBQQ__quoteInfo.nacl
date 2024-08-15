@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__quoteInfo {
-  apiVersion = 49
+  apiVersion = 57
   description = "Generates XSL-FO tree for the section that contains quote information."
   label = "Quote Info"
   fullName = "SBQQ__quoteInfo"

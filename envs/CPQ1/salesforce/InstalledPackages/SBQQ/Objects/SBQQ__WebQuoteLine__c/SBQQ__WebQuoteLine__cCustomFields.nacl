@@ -1707,7 +1707,7 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
   salesforce.Picklist SBQQ__SubscriptionPricing__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionPricing__c"
     deprecated = false
-    description = "Determines how the subscription on this line item is priced. Blank value means this line contains product that's not a subscription."
+    description = "Method of calculating the subscription price. A blank value indicates that the line item isn't a subscription product."
     externalId = false
     inlineHelpText = "Determines how the subscription price is calculated. If this is blank, the line items is not a subscription product."
     label = "Subscription Pricing"

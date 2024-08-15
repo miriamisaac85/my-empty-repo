@@ -1,6 +1,0 @@
-salesforce.SBQQ__ProductAction__c DP_Product_Rule_3___PA_0000006@sssuuub {
-  SBQQ__Required__c = false
-  SBQQ__Rule__c = salesforce.SBQQ__ProductRule__c.instance.DP_Product_Rule_3@s
-  SBQQ__Type__c = "Disable & Remove"
-  _alias = "DP Product Rule 3 PA-0000006"
-}

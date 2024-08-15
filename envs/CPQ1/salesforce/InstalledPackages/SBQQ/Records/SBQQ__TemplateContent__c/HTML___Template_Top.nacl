@@ -1,0 +1,6 @@
+salesforce.SBQQ__TemplateContent__c HTML___Template_Top@uuus {
+  SBQQ__TableStyle__c = "Standard"
+  SBQQ__Type__c = "HTML"
+  Name = "Template Top"
+  _alias = "Template Top"
+}

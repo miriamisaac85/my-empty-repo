@@ -1,0 +1,7 @@
+salesforce.SBQQ__ProductFeature__c V6_Bundle___V6Bundle___30___Support@suuuuuuuuu {
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.V6_Bundle___V6Bundle@suuu
+  SBQQ__MinOptionCount__c = 0
+  SBQQ__Number__c = 30
+  Name = "Support"
+  _alias = "V6Bundle V6 Bundle Support"
+}

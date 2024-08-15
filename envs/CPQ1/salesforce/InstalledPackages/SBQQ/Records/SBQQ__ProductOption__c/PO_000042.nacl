@@ -1,0 +1,17 @@
+salesforce.SBQQ__ProductOption__c PO_000042@b {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__Bundled__c = false
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.V6_Bundle___V6Bundle@suuu
+  SBQQ__DiscountedByPackage__c = false
+  SBQQ__Feature__c = salesforce.SBQQ__ProductFeature__c.instance.V6_Bundle___V6Bundle___50___Connectivity@suuuuuuuuu
+  SBQQ__Number__c = 625
+  SBQQ__OptionalSKU__c = salesforce.Product2.instance.Scale_out_Accessories_Kit___KITL6AO000001___FG_V5@sssuuuuuub
+  SBQQ__QuantityEditable__c = false
+  SBQQ__Quantity__c = 1
+  SBQQ__Required__c = false
+  SBQQ__Selected__c = false
+  SBQQ__System__c = false
+  SBQQ__Type__c = "Accessories"
+  SBQQ__UpliftedByPackage__c = false
+  _alias = "PO-000042"
+}

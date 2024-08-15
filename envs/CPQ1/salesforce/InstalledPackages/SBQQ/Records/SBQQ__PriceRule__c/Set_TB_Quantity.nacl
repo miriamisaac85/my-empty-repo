@@ -1,0 +1,9 @@
+salesforce.SBQQ__PriceRule__c Set_TB_Quantity@s {
+  SBQQ__Active__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "On Calculate"
+  SBQQ__EvaluationOrder__c = 50
+  SBQQ__TargetObject__c = "Calculator"
+  Name = "Set TB Quantity"
+  _alias = "Set TB Quantity"
+}

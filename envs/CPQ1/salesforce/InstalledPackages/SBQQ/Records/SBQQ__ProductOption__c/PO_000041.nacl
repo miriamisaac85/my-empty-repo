@@ -1,0 +1,16 @@
+salesforce.SBQQ__ProductOption__c PO_000041@b {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__Bundled__c = false
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.K2N_Bundle___K2NBundle@suuu
+  SBQQ__DiscountedByPackage__c = false
+  SBQQ__Feature__c = salesforce.SBQQ__ProductFeature__c.instance.K2N_Bundle___K2NBundle___40___SW_License@suuuuuuuuus
+  SBQQ__Number__c = 10
+  SBQQ__OptionalSKU__c = salesforce.Product2.instance.Premium_24x7x4_SW_support_maint_per_system_per_month___K2SWSMONATPR___S_M@sssessssuuuuuue
+  SBQQ__QuantityEditable__c = false
+  SBQQ__Required__c = false
+  SBQQ__Selected__c = false
+  SBQQ__System__c = false
+  SBQQ__Type__c = "Component"
+  SBQQ__UpliftedByPackage__c = false
+  _alias = "PO-000041"
+}

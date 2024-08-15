@@ -245,7 +245,7 @@ type salesforce.SBQQ__PricingGuidance__c {
   enableBulkApi = true
   enableFeeds = false
   enableHistory = true
-  enableLicensing = false
+  enableLicensing = true
   enableReports = true
   enableSearch = true
   enableSharing = true

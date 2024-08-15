@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__AsyncQuoteLoadExtension {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__AsyncQuoteLoadExtension"
   content = "(hidden)"

@@ -1,0 +1,6 @@
+salesforce.SBQQ__TemplateContent__c Line_Items___Line_Items@suuus {
+  SBQQ__TableStyle__c = "Standard"
+  SBQQ__Type__c = "Line Items"
+  Name = "Line Items"
+  _alias = "Line Items"
+}

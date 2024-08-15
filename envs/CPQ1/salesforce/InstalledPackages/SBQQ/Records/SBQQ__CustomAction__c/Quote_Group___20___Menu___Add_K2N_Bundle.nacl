@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c Quote_Group___20___Menu___Add_K2N_Bundle@duuuuuuuuuss {
+  SBQQ__Action__c = "Add Products"
+  SBQQ__Active__c = false
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "addProductsBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 20
+  SBQQ__EventHandlerName__c = "onAddProducts"
+  SBQQ__Label__c = "Add K2N Bundle"
+  SBQQ__Location__c = "Quote/Group"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Menu"
+  Name = "Add K2N Bundle"
+  _alias = "Add K2N Bundle"
+}

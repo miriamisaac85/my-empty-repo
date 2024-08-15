@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__datePicker {
-  apiVersion = 49
+  apiVersion = 57
   description = "Renders HTML DOM for standard date picker."
   label = "Date Picker"
   fullName = "SBQQ__datePicker"
