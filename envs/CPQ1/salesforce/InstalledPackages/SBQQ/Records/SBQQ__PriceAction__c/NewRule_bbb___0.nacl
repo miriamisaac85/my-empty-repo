@@ -1,0 +1,7 @@
+salesforce.SBQQ__PriceAction__c NewRule_bbb___0@suuu {
+  SBQQ__Field__c = "Total Price"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.NewRule_bbb@s
+  SBQQ__SourceVariable__c = salesforce.SBQQ__SummaryVariable__c.instance.Var1
+  SBQQ__TargetObject__c = "Prouct2"
+  _alias = "NewRule bbb 0"
+}

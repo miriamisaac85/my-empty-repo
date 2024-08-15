@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__DocumentSegment {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__DocumentSegment"
   content = "(hidden)"

@@ -1,0 +1,17 @@
+salesforce.SBQQ__ProductOption__c PO_000242@b {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__Bundled__c = false
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.K2N_Bundle___K2NBundle@suuu
+  SBQQ__DiscountedByPackage__c = false
+  SBQQ__Feature__c = salesforce.SBQQ__ProductFeature__c.instance.K2N_Bundle___K2NBundle___10___HW@suuuuuuuuu
+  SBQQ__Number__c = 10
+  SBQQ__OptionalSKU__c = salesforce.Product2.instance.Type_D_M_node_with_3840GB__A__NVMe_Drives___KITLDMNA03840___FG__N@ssbsssjkssuuuuuubv
+  SBQQ__QuantityEditable__c = true
+  SBQQ__Quantity__c = 1
+  SBQQ__Required__c = false
+  SBQQ__Selected__c = true
+  SBQQ__System__c = false
+  SBQQ__Type__c = "Component"
+  SBQQ__UpliftedByPackage__c = false
+  _alias = "PO-000242"
+}

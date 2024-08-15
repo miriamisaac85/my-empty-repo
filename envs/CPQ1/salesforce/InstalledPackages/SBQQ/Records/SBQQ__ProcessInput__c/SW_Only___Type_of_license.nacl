@@ -1,0 +1,12 @@
+salesforce.SBQQ__ProcessInput__c SW_Only___Type_of_license@suuuss {
+  SBQQ__Active__c = true
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__DisplayOrder__c = 1
+  SBQQ__InputField__c = "Type_of_License__c"
+  SBQQ__Label__c = "What is the license type?"
+  SBQQ__Operator__c = "equals"
+  SBQQ__ProductField__c = "Type_of_License__c"
+  SBQQ__QuoteProcess__c = salesforce.SBQQ__QuoteProcess__c.instance.SW_Only@s
+  Name = "Type of license"
+  _alias = "SW Only Type of license"
+}

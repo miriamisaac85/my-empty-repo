@@ -1,0 +1,16 @@
+salesforce.SBQQ__ProductOption__c PO_000023@b {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__Bundled__c = false
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.V6_Bundle___V6Bundle@suuu
+  SBQQ__DiscountedByPackage__c = false
+  SBQQ__Feature__c = salesforce.SBQQ__ProductFeature__c.instance.V6_Bundle___V6Bundle___14___K_Block_3@suuuuuuuuubs
+  SBQQ__Number__c = 375
+  SBQQ__OptionalSKU__c = salesforce.Product2.instance.Pair_of_V6_K_nodes_256GB___S__K6300____KITL6KNS08001___FG_V6@sssbssbssjkuuuuuub
+  SBQQ__QuantityEditable__c = false
+  SBQQ__Required__c = false
+  SBQQ__Selected__c = false
+  SBQQ__System__c = false
+  SBQQ__Type__c = "Building Block - Pair of servers"
+  SBQQ__UpliftedByPackage__c = false
+  _alias = "PO-000023"
+}

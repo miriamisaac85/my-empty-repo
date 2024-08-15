@@ -1,0 +1,11 @@
+salesforce.SBQQ__SearchFilter__c Add_V6_Bundle@s {
+  SBQQ__Action__c = salesforce.SBQQ__CustomAction__c.instance.Quote_Group___10___Menu___Add_V6_Bundle@duuuuuuuuuss
+  SBQQ__DisplayOrder__c = 10
+  SBQQ__FilterValue__c = "V6Bundle"
+  SBQQ__Hidden__c = false
+  SBQQ__Operator__c = "equals"
+  SBQQ__TargetField__c = "Product Code"
+  SBQQ__TargetObject__c = salesforce.Product2
+  Name = "Add V6 Bundle"
+  _alias = "Add V6 Bundle"
+}

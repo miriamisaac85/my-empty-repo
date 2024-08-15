@@ -247,7 +247,7 @@ type salesforce.SBQQ__PriceRule__c {
   enableEnhancedLookup = false
   enableFeeds = false
   enableHistory = false
-  enableLicensing = false
+  enableLicensing = true
   enableReports = false
   enableSearch = true
   enableSharing = true

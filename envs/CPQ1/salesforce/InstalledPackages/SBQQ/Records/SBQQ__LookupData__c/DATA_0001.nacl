@@ -1,0 +1,8 @@
+salesforce.SBQQ__LookupData__c DATA_0001@b {
+  SBQQ__Category__c = "Category1"
+  SBQQ__Product__c = salesforce.Product2.instance.Pre_paid_software_subscription_per_TiB_usable___K2SWTBUSPNAM___S_M@bsssssuuuuuue
+  SBQQ__Required__c = false
+  SBQQ__Type__c = "Show"
+  SBQQ__Value__c = "1"
+  _alias = "DATA-0001"
+}

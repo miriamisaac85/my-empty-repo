@@ -1,0 +1,9 @@
+salesforce.SBQQ__PriceCondition__c Set_TB_Quantity___3@ssuuu {
+  SBQQ__Field__c = "Quantity_TB__c"
+  SBQQ__FilterType__c = "Value"
+  SBQQ__Object__c = "Quote"
+  SBQQ__Operator__c = "greater than"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.Set_TB_Quantity@s
+  SBQQ__Value__c = "0"
+  _alias = "Set TB Quantity 3"
+}

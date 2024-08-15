@@ -1,5 +1,5 @@
 salesforce.ApexComponent SBQQ__paginationControls {
-  apiVersion = 49
+  apiVersion = 57
   description = "Renders pagination controls on list views."
   label = "paginationControls"
   fullName = "SBQQ__paginationControls"

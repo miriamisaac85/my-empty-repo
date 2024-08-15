@@ -1,5 +1,5 @@
 salesforce.ApexClass SBQQ__FieldSetService {
-  apiVersion = 49
+  apiVersion = 57
   status = "Active"
   fullName = "SBQQ__FieldSetService"
   content = "(hidden)"

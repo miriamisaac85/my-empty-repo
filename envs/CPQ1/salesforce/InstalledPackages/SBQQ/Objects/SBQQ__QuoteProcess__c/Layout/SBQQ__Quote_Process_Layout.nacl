@@ -28,6 +28,14 @@ salesforce.Layout SBQQ__QuoteProcess__c_SBQQ__Quote_Process_Layout@uuuubuuss {
               behavior = "Edit"
               field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__GuidedOnly__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.Subscription_License_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.Type_of_License__c
+            },
           ]
         },
         {

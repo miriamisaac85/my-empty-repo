@@ -1,4 +1,16 @@
 type salesforce.SBQQ__ProductOption__c {
+  salesforce.Text Feature_Name__c {
+    apiName = "SBQQ__ProductOption__c.Feature_Name__c"
+    externalId = false
+    label = "Feature Name"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
   salesforce.Picklist SBQQ__AppliedImmediatelyContext__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__AppliedImmediatelyContext__c"
     deprecated = false
@@ -710,6 +722,18 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Check to automatically apply uplift from parent package to this component. Only applies to components that are multi-segmented products."
     label = "Uplifted By Package"
     trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Usable_Capacity__c {
+    apiName = "SBQQ__ProductOption__c.Usable_Capacity__c"
+    externalId = false
+    label = "Usable Capacity"
+    precision = 6
+    scale = 0
+    trackTrending = false
+    unique = false
     createable = true
     updateable = true
     queryable = true

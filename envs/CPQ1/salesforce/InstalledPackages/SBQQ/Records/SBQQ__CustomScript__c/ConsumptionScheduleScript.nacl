@@ -1,0 +1,11 @@
+salesforce.SBQQ__CustomScript__c ConsumptionScheduleScript {
+  SBQQ__Code__c = file(
+    "salesforce/InstalledPackages/SBQQ/Records/SBQQ__CustomScript__c/ConsumptionScheduleScript.js",
+    "utf-8",
+  )
+  SBQQ__ConsumptionScheduleFields__c = [
+    salesforce.ConsumptionSchedule.field.Name,
+  ]
+  Name = "ConsumptionScheduleScript"
+  _alias = "ConsumptionScheduleScript"
+}
